@@ -1,0 +1,32 @@
+{
+  "program": "worker",
+  "run": "poisoned",
+  "trace_file": "/home/claude/syscall-sandboxes/data/worker/traces/poisoned.strace",
+  "total_calls": 47,
+  "unique_syscalls": 22,
+  "processes_or_threads": 1,
+  "counts": {
+    "execve": 1,
+    "brk": 3,
+    "mmap": 12,
+    "openat": 3,
+    "read": 2,
+    "fstat": 4,
+    "close": 3,
+    "access": 1,
+    "pread64": 2,
+    "arch_prctl": 1,
+    "set_tid_address": 1,
+    "set_robust_list": 1,
+    "rseq": 1,
+    "mprotect": 4,
+    "prlimit64": 1,
+    "munmap": 1,
+    "ptrace": 1,
+    "unshare": 1,
+    "bpf": 1,
+    "getrandom": 1,
+    "write": 1,
+    "exit_group": 1
+  }
+}

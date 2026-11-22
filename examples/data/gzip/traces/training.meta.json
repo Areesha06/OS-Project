@@ -1,0 +1,16 @@
+{
+  "program": "gzip",
+  "run": "training",
+  "passed_under_strace": true,
+  "argv": [
+    "gzip",
+    "-c",
+    "input.txt"
+  ],
+  "poisoned": false,
+  "kernel": "6.18.44-fc-v726",
+  "machine": "x86_64",
+  "glibc": "glibc 2.39",
+  "strace": "strace -- version 6.8",
+  "recorded_at": "2026-11-22T17:27:45"
+}

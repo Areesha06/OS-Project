@@ -1,0 +1,36 @@
+# High-risk syscalls (x86_64). One per line: name  # why it is dangerous
+# A least-privilege policy for an ordinary program should allow none of these.
+# Sources: Docker's default seccomp profile (which blocks most of these),
+# Google's io_uring restriction, and well-known container-escape techniques.
+ptrace               # inspect and control other processes (debugger-style attacks)
+process_vm_readv     # read another process's memory
+process_vm_writev    # write into another process's memory
+mount                # mount filesystems (container escape)
+umount2              # unmount filesystems
+pivot_root           # change the root filesystem
+chroot               # change root directory (escape tricks when combined with others)
+unshare              # create new namespaces (user/mount/net) - common escape primitive
+setns                # join another namespace
+bpf                  # load eBPF programs into the kernel
+perf_event_open      # kernel profiling interface; frequent exploit target
+init_module          # load a kernel module
+finit_module         # load a kernel module from a file
+delete_module        # unload a kernel module
+kexec_load           # load a new kernel to boot into
+kexec_file_load      # load a new kernel from a file
+reboot               # reboot or halt the machine
+keyctl               # kernel keyring management; history of exploits
+add_key              # add a key to the kernel keyring
+request_key          # request a key from the kernel keyring
+userfaultfd          # user-space page-fault handling; classic race-exploit helper
+io_uring_setup       # io_uring; disabled by Google on production systems after many CVEs
+io_uring_enter       # io_uring submission
+io_uring_register    # io_uring registration
+open_by_handle_at    # open files by handle; used in the "Shocker" container escape
+swapon               # enable swap devices
+swapoff              # disable swap devices
+settimeofday         # change the system clock
+clock_settime        # change a system clock
+iopl                 # change I/O privilege level (direct hardware access)
+ioperm               # allow direct access to I/O ports
+syslog               # read/clear the kernel log

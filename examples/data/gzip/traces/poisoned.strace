@@ -1,0 +1,75 @@
+468   execve("/usr/bin/gzip", ["/usr/bin/gzip", "-c", "input.txt"], 0x7fffe4871168 /* 240 vars */) = 0
+468   brk(NULL)                         = 0x5615f6f0a000
+468   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdc12a43000
+468   openat(AT_FDCWD, "/home/claude/syscall-sandboxes/programs/bin/poison.so", O_RDONLY|O_CLOEXEC) = 3
+468   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+468   fstat(3, {st_mode=S_IFREG|0755, st_size=15488, ...}) = 0
+468   mmap(NULL, 16408, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdc12a3e000
+468   mmap(0x7fdc12a3f000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7fdc12a3f000
+468   mmap(0x7fdc12a40000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fdc12a40000
+468   mmap(0x7fdc12a41000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fdc12a41000
+468   close(3)                          = 0
+468   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+468   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+468   fstat(3, {st_mode=S_IFREG|0644, st_size=54704, ...}) = 0
+468   mmap(NULL, 54704, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fdc12a30000
+468   close(3)                          = 0
+468   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+468   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+468   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+468   fstat(3, {st_mode=S_IFREG|0755, st_size=2129424, ...}) = 0
+468   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+468   mmap(NULL, 2174352, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdc12800000
+468   mmap(0x7fdc12828000, 1609728, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fdc12828000
+468   mmap(0x7fdc129b1000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b1000) = 0x7fdc129b1000
+468   mmap(0x7fdc12a00000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ff000) = 0x7fdc12a00000
+468   mmap(0x7fdc12a06000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fdc12a06000
+468   close(3)                          = 0
+468   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdc12a2d000
+468   arch_prctl(ARCH_SET_FS, 0x7fdc12a2d740) = 0
+468   set_tid_address(0x7fdc12a2da10)   = 468
+468   set_robust_list(0x7fdc12a2da20, 24) = 0
+468   rseq(0x7fdc12a2e060, 0x20, 0, 0x53053053) = 0
+468   mprotect(0x7fdc12a00000, 16384, PROT_READ) = 0
+468   mprotect(0x7fdc12a41000, 4096, PROT_READ) = 0
+468   mprotect(0x5615c54c6000, 4096, PROT_READ) = 0
+468   mprotect(0x7fdc12a83000, 8192, PROT_READ) = 0
+468   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+468   munmap(0x7fdc12a30000, 54704)     = 0
+468   ptrace(0xffffffffffffffff /* PTRACE_??? */, 0, NULL, NULL) = -1 ESRCH (No such process)
+468   unshare(CLONE_NEWTIME|CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_NEWNS|CLONE_SYSVSEM|CLONE_NEWCGROUP|CLONE_NEWUTS|CLONE_NEWIPC|CLONE_NEWUSER|CLONE_NEWPID|CLONE_NEWNET|0xffffffff81f8f07f) = -1 EINVAL (Invalid argument)
+468   bpf(0xffffffff /* BPF_??? */, NULL, 0) = -1 EINVAL (Invalid argument)
+468   rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+468   rt_sigaction(SIGHUP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+468   rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+468   rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+468   rt_sigaction(SIGXCPU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+468   rt_sigaction(SIGXFSZ, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+468   rt_sigaction(SIGINT, {sa_handler=0x5615c54b5630, sa_mask=[HUP INT PIPE TERM XCPU XFSZ], sa_flags=SA_RESTORER, sa_restorer=0x7fdc12845330}, NULL, 8) = 0
+468   rt_sigaction(SIGHUP, {sa_handler=0x5615c54b5630, sa_mask=[HUP INT PIPE TERM XCPU XFSZ], sa_flags=SA_RESTORER, sa_restorer=0x7fdc12845330}, NULL, 8) = 0
+468   rt_sigaction(SIGPIPE, {sa_handler=0x5615c54b5630, sa_mask=[HUP INT PIPE TERM XCPU XFSZ], sa_flags=SA_RESTORER, sa_restorer=0x7fdc12845330}, NULL, 8) = 0
+468   rt_sigaction(SIGTERM, {sa_handler=0x5615c54b5630, sa_mask=[HUP INT PIPE TERM XCPU XFSZ], sa_flags=SA_RESTORER, sa_restorer=0x7fdc12845330}, NULL, 8) = 0
+468   rt_sigaction(SIGXCPU, {sa_handler=0x5615c54b5630, sa_mask=[HUP INT PIPE TERM XCPU XFSZ], sa_flags=SA_RESTORER, sa_restorer=0x7fdc12845330}, NULL, 8) = 0
+468   rt_sigaction(SIGXFSZ, {sa_handler=0x5615c54b5630, sa_mask=[HUP INT PIPE TERM XCPU XFSZ], sa_flags=SA_RESTORER, sa_restorer=0x7fdc12845330}, NULL, 8) = 0
+468   openat(AT_FDCWD, ".", O_RDONLY|O_DIRECTORY) = 3
+468   openat(3, "input.txt", O_RDONLY|O_NOCTTY|O_NONBLOCK) = 4
+468   fstat(4, {st_mode=S_IFREG|0644, st_size=405264, ...}) = 0
+468   read(4, "8ZVTGEBocRIWTj8my+T2yjpfSe8oBcdw"..., 65536) = 65536
+468   read(4, "PoPsOlvY66Drr+cGO/p3XC5Nr0y9+G+b"..., 32768) = 32768
+468   read(4, "fgsQtn3h7SZzpVl4pddhHOfR\nVTnPHzz"..., 32768) = 32768
+468   read(4, "OXcjLD1z2Q8gjlv8b3Dpe2u/HKVoCPtV"..., 32768) = 32768
+468   read(4, "BNMFGzMv5B5vYYE\nDIAeJm6aZmYsOW+q"..., 32768) = 32768
+468   read(4, "+N6uJg5xSP55nhP2A8/S5z38W1C556p/"..., 32768) = 32768
+468   read(4, "i95Q61\nNdD0D/2xn+aZFGPU67m0BFgNJ"..., 32768) = 32768
+468   read(4, "I+Isg54hoMQvziLuCWTpcNo2QF/GXqL1"..., 32768) = 32768
+468   read(4, "UVfA4Y2/fdbVOp8o58GArDSB7dBsbf+v"..., 32768) = 32768
+468   read(4, "zSBDIDgcQVWm1NaXy1/wCcDwNUG/am5\n"..., 32768) = 32768
+468   read(4, "orVAiMg4x5KZuDCZBcKSfBI4L/TFbkxy"..., 32768) = 32768
+468   write(1, "\37\213\10\10\302\337\2k\0\3input.txt\0\24\2357\202\243@\20E\363\271\n\1"..., 262144) = 262144
+468   read(4, "uimf6KxS7HnZsVja2M2wLI\nt94ejJRWS"..., 32768) = 12048
+468   read(4, "", 20720)                = 0
+468   write(1, "v\35\315\317\t/9u\255\242\"E1@\230\234\35w$[f\2256_E\246U\205h\211\2226"..., 45866) = 45866
+468   close(4)                          = 0
+468   close(1)                          = 0
+468   exit_group(0)                     = ?
+468   +++ exited with 0 +++

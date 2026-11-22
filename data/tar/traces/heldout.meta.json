@@ -1,0 +1,18 @@
+{
+  "program": "tar",
+  "run": "heldout",
+  "passed_under_strace": true,
+  "argv": [
+    "tar",
+    "-xf",
+    "archive.tar",
+    "-C",
+    "out"
+  ],
+  "poisoned": false,
+  "kernel": "6.18.58.1-microsoft-standard-WSL2",
+  "machine": "x86_64",
+  "glibc": "glibc 2.43",
+  "strace": "strace -- version 6.19",
+  "recorded_at": "2026-11-22T20:20:09"
+}

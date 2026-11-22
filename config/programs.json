@@ -1,0 +1,63 @@
+{
+  "_comment": "Test programs. Each run is executed in a fresh scratch directory. {BIN} = programs/bin, {WORKLOADS} = programs/workloads. 'setup' commands run with bash before the traced/jailed command and are NOT traced. 'check' runs afterwards to confirm the program really did its job. The poisoned run = the training run with LD_PRELOAD={BIN}/poison.so (see programs/src/poison.c).",
+  "programs": {
+    "gzip": {
+      "description": "GNU gzip: compresses and decompresses files.",
+      "elements": ["io"],
+      "setup": ["head -c 300000 /dev/urandom | base64 > input.txt"],
+      "runs": {
+        "training": {"argv": ["gzip", "-c", "input.txt"], "stdout": "out.gz", "check": "gzip -t out.gz"},
+        "heldout":  {"argv": ["gzip", "-f", "input.txt"], "check": "test -f input.txt.gz && test ! -f input.txt && gzip -t input.txt.gz"}
+      }
+    },
+    "sqlite3": {
+      "description": "SQLite command-line shell: runs SQL against a database file.",
+      "elements": ["io", "persistence"],
+      "setup": ["cp {WORKLOADS}/sqlite_insert.sql {WORKLOADS}/sqlite_query.sql ."],
+      "runs": {
+        "training": {"argv": ["sqlite3", "test.db"], "stdin": "sqlite_insert.sql", "check": "test -s test.db"},
+        "heldout":  {"setup": ["sqlite3 test.db < sqlite_insert.sql"], "argv": ["sqlite3", "test.db"], "stdin": "sqlite_query.sql", "stdout": "result.txt", "check": "grep -q '^OK' result.txt"}
+      }
+    },
+    "cp": {
+      "description": "GNU cp: copies files and directories.",
+      "elements": ["io"],
+      "setup": ["mkdir -p srcdir/sub", "head -c 50000 /dev/urandom > srcdir/a.bin", "echo hello > srcdir/sub/b.txt", "chmod 640 srcdir/sub/b.txt"],
+      "runs": {
+        "training": {"argv": ["cp", "srcdir/a.bin", "copy.bin"], "check": "cmp srcdir/a.bin copy.bin"},
+        "heldout":  {"argv": ["cp", "-rp", "srcdir", "dstdir"], "check": "diff -r srcdir dstdir"}
+      }
+    },
+    "tar": {
+      "description": "GNU tar: creates and extracts archive files.",
+      "elements": ["io"],
+      "setup": ["mkdir -p srcdir/sub", "head -c 50000 /dev/urandom > srcdir/a.bin", "echo hello > srcdir/sub/b.txt"],
+      "runs": {
+        "training": {"argv": ["tar", "-cf", "archive.tar", "srcdir"], "check": "tar -tf archive.tar | grep -q a.bin"},
+        "heldout":  {"setup": ["tar -cf archive.tar srcdir", "mkdir out"], "argv": ["tar", "-xf", "archive.tar", "-C", "out"], "check": "diff -r srcdir out/srcdir"}
+      }
+    },
+    "mini_httpd": {
+      "description": "Tiny single-request HTTP server written for this project: serves files with sendfile() or lists a directory.",
+      "elements": ["io"],
+      "setup": ["mkdir -p www/docs", "echo '<h1>hello</h1>' > www/index.html", "echo notes > www/docs/notes.txt"],
+      "runs": {
+        "training": {"argv": ["{BIN}/mini_httpd", "18080", "www"], "client": {"port": 18080, "path": "/index.html", "expect": "200"}},
+        "heldout":  {"argv": ["{BIN}/mini_httpd", "18080", "www"], "client": {"port": 18080, "path": "/docs", "expect": "200"}}
+      }
+    },
+    "worker": {
+      "description": "Multithreaded worker written for this project: N POSIX threads sum an array under a mutex (N=0 means no threads).",
+      "elements": ["concurrency"],
+      "setup": [],
+      "runs": {
+        "training": {"argv": ["{BIN}/worker", "0"], "stdout": "out.txt", "check": "grep -q total= out.txt"},
+        "heldout":  {"argv": ["{BIN}/worker", "4"], "stdout": "out.txt", "check": "grep -q total= out.txt"}
+      }
+    }
+  },
+  "probe": {
+    "description": "Harmless escape probe: tries dangerous syscalls with invalid arguments. Used for the containment check and the visualizer's jailbreak scene.",
+    "argv": ["{BIN}/escape_probe"]
+  }
+}

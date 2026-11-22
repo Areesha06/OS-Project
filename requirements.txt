@@ -1,0 +1,6 @@
+# Python 3.10+ on Windows or Ubuntu.  pip install -r requirements.txt
+# The LLM harness (harness/) uses only the standard library.
+pandas>=2.0          # analysis tables
+matplotlib>=3.7      # figures
+tabulate>=0.9        # markdown tables in results/summary.md
+pygame-ce>=2.4       # visualizer (pygame community edition; `pip install pygame` also works)
