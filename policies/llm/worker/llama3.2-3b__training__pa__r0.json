@@ -1,0 +1,22 @@
+{
+  "program": "worker",
+  "source": "llama3.2:3b",
+  "prompt": "a",
+  "repeat": 0,
+  "trace_used": "training",
+  "allow": [],
+  "json_valid": false,
+  "extraction": "failed",
+  "raw_output": "{\"allow\": [\"openat\", \"newfstatat\", \"newfstat\", \"close\", \"epoll_wait\", \"epoll_ctl\", \"epoll_pwait\", \"mq_send\", \"mq_timedsend\", \"mq_receive\", \"mq_timedrecv\", \"mq_getsendqueue\", \"mq_getflags\", \"mq_sendmsg\", \"mq_recvmsg\", \"mq_timedsendmsg\", \"mq_timedrecvmsg\", \"usleep\", \"nanosleep\", \"clock_gettime\", \"clock_gettime\", \"getpid\", \"getppid\", \"getuid\", \"geteuid\", \"getgid\", \"getegid\", \"getresuid\", \"getresgid\", \"getuid64\", \"geteuid64\", \"getgid64\", \"getresuid64\", \"getresgid64\", \"clock_nanosleep\", \"getmntent\", \"getmntent_r\", \"getmntent_r2\", \"futex\", \"futex_wait\", \"futex_timedwait\", \"futex_waitat\", \"futex_timedwaitat\", \"futex_destroy\", \"futex_init\", \"futex_lock\", \"futex_trylock\", \"futex_unlock\", \"futex_tryunlock\", \"futex_atomic\", \"futex_waitv\", \"futex_timedwaitv\", \"futex_trywait\", \"futex_trywaitv\", \"fsync\", \"fdatasync\", \"msync\", \"fadvise\", \"fdatasync\", \"fadvise\", \"pread\", \"pwrite\", \"pread64\", \"pwrite64\", \"fstat\", \"fstatat\", \"fstatat64\", \"fstatat64\", \"fstat\", \"fstatat\", \"fstatat64\", \"fstatat64\", \"fstat\", \"fsync\", \"fsync\", \"fdatasync\", \"fdatasync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"msync\", \"ms",
+  "temperature": 0.7,
+  "seed": 0,
+  "json_mode": false,
+  "wall_s": 10.25,
+  "total_s": 10.25,
+  "load_s": 0.0,
+  "prompt_tokens": 239,
+  "output_tokens": 1024,
+  "gen_s": 10.05,
+  "system_prompt": "You are a Linux security engineer who writes seccomp allow-lists.\nA seccomp allow-list is the set of system calls a program is permitted to make.\nEvery system call NOT on the list is blocked and the program is killed if it makes one.\n\nRules:\n1. Use exact Linux x86_64 system call names as in <asm/unistd_64.h>, for example: openat, newfstatat, exit_group.\n2. The program must keep working in ALL of its normal uses, not only the one described.\n3. Do NOT include system calls the program does not need for normal operation. Every extra system call is attack surface.\n4. Reply with JSON only, in exactly this form:\n{\"allow\": [\"syscall_1\", \"syscall_2\"], \"notes\": \"one short sentence\"}",
+  "user_prompt": "Program: worker\nWhat it does: Multithreaded worker written for this project: N POSIX threads sum an array under a mutex (N=0 means no threads).\n\nWrite the seccomp allow-list for this program."
+}

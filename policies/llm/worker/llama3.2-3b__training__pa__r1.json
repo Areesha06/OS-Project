@@ -1,0 +1,22 @@
+{
+  "program": "worker",
+  "source": "llama3.2:3b",
+  "prompt": "a",
+  "repeat": 1,
+  "trace_used": "training",
+  "allow": [],
+  "json_valid": false,
+  "extraction": "failed",
+  "raw_output": "```json\n{\"allow\": [\"open\", \"openat\", \"close\", \"closeat\", \"lock\", \"unlock\", \"munlock\", \"munlockat\", \"msync\", \"futex\", \"futexat\", \"futex_wake\", \"futex_wakeat\", \"futex Wait\", \"futex Waitat\", \"waitid\", \"waitidat\", \"waitpid\", \"waitpidat\", \"exit\", \"exitat\", \"newfstatat\", \"newfstatatat\", \"newfstatatof\", \"newfstatatofat\", \"stat\", \"statat\", \"statat64\", \"statat64at\", \"fstat\", \"fstatat\", \"fstatat64\", \"fstatat64at\", \"fdatasync\", \"fsync\", \"fdatasyncat\", \"fsyncat\", \"fcntl\", \"fcntlat\", \"getpid\", \"getpidat\", \"getppid\", \"getppidat\", \"geteuid\", \"geteuidat\", \"getuid\", \"getuidat\", \"getgroupld\", \"getgrouplda\", \"getgroups\", \"getgroupsat\", \"getresuid\", \"getresuidat\", \"getresgid\", \"getresgidat\", \"getegid\", \"getegidat\", \"getuid\", \"getuidat\", \"getgid\", \"getgidat\", \"seteuid\", \"seteuidat\", \"setgid\", \"setgidat\", \"sethostname\", \"sethostname\", \"setreuid\", \"setreuidat\", \"setrgid\", \"setrgidat\", \"setegid\", \"setegidat\", \"getcwd\", \"getcwdat\", \"getdents\", \"getdents64\", \"getdentsat\", \"getdentsat64\", \"getppid\", \"getppidat\", \"getpid\", \"getpidat\", \"getresuid\", \"getresuidat\", \"getresgid\", \"getresgidat\", \"geteuid\", \"geteuidat\", \"getuid\", \"getuidat\", \"getgid\", \"getgidat\", \"setuid\", \"setuidat\", \"setgid\", \"setgidat\", \"sethostname\", \"sethostname\", \"setreuid\", \"setreuidat\", \"setrgid\", \"setrgidat\", \"setegid\", \"setegidat\", \"newfstatat\", \"newfstatatat\", \"newfstatatof\", \"newfstatatofat\", \"msync\", \"msyncat\", \"msyncfs\", \"msyncfsat\", \"msyncfsat64\", \"msyncfsat64at\", \"msyncfs\", \"msyncfsat\", \"msyncfsat64\", \"msyncfsat64at\", \"getpid\", \"getpidat\", \"getppid\", \"getppidat\", \"geteuid\", \"geteuidat\", \"getuid\", \"getuidat\", \"getgroupld\", \"getgrouplda\", \"getgroups\", \"getgroupsat\", \"getresuid\", \"getresuidat\", \"getresgid\", \"getresgidat\", \"getegid\", \"getegidat\", \"getuid\", \"getuidat\", \"getgid\", \"getgidat\", \"seteuid\", \"seteuidat\", \"setgid\", \"setgidat\", \"sethostname\", \"sethostname\", \"setreuid\", \"setreuidat\", \"setrgid\", \"setrgidat\", \"setegid\", \"setegidat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat\", \"creat",
+  "temperature": 0.7,
+  "seed": 1,
+  "json_mode": false,
+  "wall_s": 10.37,
+  "total_s": 10.37,
+  "load_s": 0.0,
+  "prompt_tokens": 239,
+  "output_tokens": 1024,
+  "gen_s": 10.25,
+  "system_prompt": "You are a Linux security engineer who writes seccomp allow-lists.\nA seccomp allow-list is the set of system calls a program is permitted to make.\nEvery system call NOT on the list is blocked and the program is killed if it makes one.\n\nRules:\n1. Use exact Linux x86_64 system call names as in <asm/unistd_64.h>, for example: openat, newfstatat, exit_group.\n2. The program must keep working in ALL of its normal uses, not only the one described.\n3. Do NOT include system calls the program does not need for normal operation. Every extra system call is attack surface.\n4. Reply with JSON only, in exactly this form:\n{\"allow\": [\"syscall_1\", \"syscall_2\"], \"notes\": \"one short sentence\"}",
+  "user_prompt": "Program: worker\nWhat it does: Multithreaded worker written for this project: N POSIX threads sum an array under a mutex (N=0 means no threads).\n\nWrite the seccomp allow-list for this program."
+}

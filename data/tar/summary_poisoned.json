@@ -2,7 +2,7 @@
   "program": "tar",
   "run": "poisoned",
   "trace_file": "/home/home_game/OS-Project/data/tar/traces/poisoned.strace",
-  "total_calls": 173,
+  "total_calls": 175,
   "unique_syscalls": 31,
   "processes_or_threads": 1,
   "counts": {
@@ -24,7 +24,7 @@
     "getrandom": 1,
     "munmap": 1,
     "statfs": 2,
-    "lseek": 4,
+    "lseek": 6,
     "ptrace": 1,
     "unshare": 1,
     "bpf": 1,

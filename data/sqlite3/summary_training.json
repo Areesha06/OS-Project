@@ -2,7 +2,7 @@
   "program": "sqlite3",
   "run": "training",
   "trace_file": "/home/home_game/OS-Project/data/sqlite3/traces/training.strace",
-  "total_calls": 307,
+  "total_calls": 308,
   "unique_syscalls": 32,
   "processes_or_threads": 1,
   "counts": {
@@ -29,7 +29,7 @@
     "socket": 2,
     "connect": 2,
     "newfstatat": 17,
-    "lseek": 1,
+    "lseek": 2,
     "getcwd": 1,
     "getpid": 5,
     "fcntl": 22,

@@ -1,0 +1,22 @@
+{
+  "program": "cp",
+  "source": "llama3.2:3b",
+  "prompt": "a",
+  "repeat": 0,
+  "trace_used": "training",
+  "allow": [],
+  "json_valid": false,
+  "extraction": "failed",
+  "raw_output": "{\"allow\": [\"openat\", \"read\", \"write\", \"mmap\", \"munmap\", \"close\", \"exit\", \"exit_group\", \"waitid\", \"wait\", \"waitpid\", \"reboot\", \"pause\", \"nanosleep\", \"clock_nanosleep\", \"getpid\", \"getppid\", \"getuid\", \"geteuid\", \"getegid\", \"getuid\", \"getgid\", \"open\", \"creat\", \"openat\", \"fstat\", \"fdatasync\", \"fsync\", \"ftruncate\", \"lock\", \"unlock\", \"msync\", \"msync\", \"read\", \"readv\", \"write\", \"writev\", \"pread\", \"pwrite\", \"preadv\", \"pwritev\", \"lseek\", \"getdents64\", \"fcntl\", \"fchown\", \"fchownat\", \"fchownl\", \"fchdir\", \"fstatat\", \"fdatasyncat\", \"fsyncat\", \"ftruncateat\", \"ftruncate64\", \"ftruncateat64\", \"lockat\", \"unlockat\", \"msyncat\", \"msync64\", \"msyncat64\", \"fadvise\", \"fadvise64\", \"fdatasync\", \"fsync\", \"ftruncate\", \"mknod\", \"renameat\", \"rename\", \"linkat\", \"symlinkat\", \"utimensat\", \"utimens\", \"utimensat64\", \"utimens64\", \"stat\", \"fstat\", \"fstatat\", \"fstatat64\", \"statat\", \"statat64\", \"stat64\", \"lstat\", \"fstat\", \"fstatat\", \"fstatat64\", \"lstat64\", \"fchown\", \"fchownat\", \"fchownl\", \"fchdir\", \"fstatat\", \"fdatasyncat\", \"fsyncat\", \"ftruncateat\", \"ftruncate64\", \"ftruncateat64\", \"lockat\", \"unlockat\", \"msyncat\", \"msync64\", \"msyncat64\", \"fadvise\", \"fadvise64\", \"fdatasync\", \"fsync\", \"ftruncate\", \"mknod\", \"renameat\", \"rename\", \"linkat\", \"symlinkat\", \"utimensat\", \"utimens\", \"utimensat64\", \"utimens64\", \"stat\", \"fstat\", \"fstatat\", \"fstatat64\", \"statat\", \"statat64\", \"stat64\", \"lstat\", \"fstat\", \"fstatat\", \"fstatat64\", \"lstat64\", \"fchown\", \"fchownat\", \"fchownl\", \"fchdir\", \"fstatat\", \"fdatasyncat\", \"fsyncat\", \"ftruncateat\", \"ftruncate64\", \"ftruncateat64\", \"lockat\", \"unlockat\", \"msyncat\", \"msync64\", \"msyncat64\", \"fadvise\", \"fadvise64\", \"fdatasync\", \"fsync\", \"ftruncate\", \"mknod\", \"renameat\", \"rename\", \"linkat\", \"symlinkat\", \"utimensat\", \"utimens\", \"utimensat64\", \"utimens64\", \"stat\", \"fstat\", \"fstatat\", \"fstatat64\", \"statat\", \"statat64\", \"stat64\", \"lstat\", \"fstat\", \"fstatat\", \"fstatat64\", \"lstat64\", \"exit_group\", \"waitid\", \"exit\", \"wait\", \"waitpid\", \"reboot\", \"pause\", \"nanosleep\", \"clock_nanosleep\", \"getpid\", \"getppid\", \"getuid\", \"geteuid\", \"getegid\", \"getresuid\", \"getresgid\", \"getresuid\", \"getresgid\", \"geteuid\", \"getgid\", \"getuid\", \"getppid\", \"getpid\", \"getuid\", \"getuid\", \"geteuid\", \"getegid\", \"getresuid\", \"getresgid\", \"getresuid\", \"getresgid\", \"geteuid\", \"geteuid\", \"geteuid\", \"getresuid\", \"getresgid\", \"geteuid\", \"geteuid\", \"geteuid\", \"geteuid\", \"geteuid\", \"geteuid\", \"geteuid\", \"geteuid\", \"geteuid\", \"geteuid\", \"geteuid\", \"geteuid\", \"geteuid\", \"geteuid\", \"geteuid\", \"geteuid\", \"geteuid\", \"geteuid",
+  "temperature": 0.7,
+  "seed": 0,
+  "json_mode": false,
+  "wall_s": 10.25,
+  "total_s": 10.24,
+  "load_s": 0.0,
+  "prompt_tokens": 220,
+  "output_tokens": 1024,
+  "gen_s": 10.1,
+  "system_prompt": "You are a Linux security engineer who writes seccomp allow-lists.\nA seccomp allow-list is the set of system calls a program is permitted to make.\nEvery system call NOT on the list is blocked and the program is killed if it makes one.\n\nRules:\n1. Use exact Linux x86_64 system call names as in <asm/unistd_64.h>, for example: openat, newfstatat, exit_group.\n2. The program must keep working in ALL of its normal uses, not only the one described.\n3. Do NOT include system calls the program does not need for normal operation. Every extra system call is attack surface.\n4. Reply with JSON only, in exactly this form:\n{\"allow\": [\"syscall_1\", \"syscall_2\"], \"notes\": \"one short sentence\"}",
+  "user_prompt": "Program: cp\nWhat it does: GNU cp: copies files and directories.\n\nWrite the seccomp allow-list for this program."
+}

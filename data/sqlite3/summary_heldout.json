@@ -2,7 +2,7 @@
   "program": "sqlite3",
   "run": "heldout",
   "trace_file": "/home/home_game/OS-Project/data/sqlite3/traces/heldout.strace",
-  "total_calls": 1531,
+  "total_calls": 1532,
   "unique_syscalls": 35,
   "processes_or_threads": 1,
   "counts": {
@@ -25,7 +25,7 @@
     "munmap": 2,
     "ioctl": 3,
     "rt_sigaction": 1,
-    "lseek": 3,
+    "lseek": 4,
     "getcwd": 1,
     "newfstatat": 28,
     "getpid": 6,

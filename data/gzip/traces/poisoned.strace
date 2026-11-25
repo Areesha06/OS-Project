@@ -1,64 +1,64 @@
-2906  execve("/usr/bin/gzip", ["/usr/bin/gzip", "-c", "input.txt"], 0x7fff0fdf8c98 /* 31 vars */) = 0
-2906  brk(NULL)                         = 0x5dc9e033a000
-2906  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76af26ba8000
-2906  openat(AT_FDCWD, "/home/home_game/OS-Project/programs/bin/poison.so", O_RDONLY|O_CLOEXEC) = 3
-2906  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
-2906  fstat(3, {st_mode=S_IFREG|0755, st_size=15480, ...}) = 0
-2906  mmap(NULL, 16408, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x76af26ba3000
-2906  mmap(0x76af26ba4000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x76af26ba4000
-2906  mmap(0x76af26ba5000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x76af26ba5000
-2906  mmap(0x76af26ba6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x76af26ba6000
-2906  close(3)                          = 0
-2906  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
-2906  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
-2906  fstat(3, {st_mode=S_IFREG|0644, st_size=20767, ...}) = 0
-2906  mmap(NULL, 20767, PROT_READ, MAP_PRIVATE, 3, 0) = 0x76af26b9d000
-2906  close(3)                          = 0
-2906  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
-2906  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \250\2\0\0\0\0\0"..., 832) = 832
-2906  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 840, 64) = 840
-2906  fstat(3, {st_mode=S_IFREG|0755, st_size=2190608, ...}) = 0
-2906  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 840, 64) = 840
-2906  mmap(NULL, 2231696, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x76af26800000
-2906  mmap(0x76af26828000, 1671168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x76af26828000
-2906  mmap(0x76af269c0000, 319488, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x76af269c0000
-2906  mmap(0x76af26a0e000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20e000) = 0x76af26a0e000
-2906  mmap(0x76af26a14000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x76af26a14000
-2906  close(3)                          = 0
-2906  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76af26b9a000
-2906  arch_prctl(ARCH_SET_FS, 0x76af26b9a740) = 0
-2906  set_tid_address(0x76af26b9ad68)   = 2906
-2906  set_robust_list(0x76af26b9aa20, 24) = 0
-2906  rseq(0x76af26b9a6a0, 0x20, 0, 0x53053053) = 0
-2906  mprotect(0x76af26a0e000, 16384, PROT_READ) = 0
-2906  mprotect(0x76af26ba6000, 4096, PROT_READ) = 0
-2906  mprotect(0x5dc9bd1e8000, 4096, PROT_READ) = 0
-2906  mprotect(0x76af26bed000, 8192, PROT_READ) = 0
-2906  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
-2906  getrandom("\x25\xe7\x36\x9b\x15\xd5\x0c\xbf", 8, GRND_NONBLOCK) = 8
-2906  munmap(0x76af26b9d000, 20767)     = 0
-2906  ptrace(0xffffffffffffffff /* PTRACE_??? */, 0, NULL, NULL) = -1 ESRCH (No such process)
-2906  unshare(CLONE_NEWTIME|CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_NEWNS|CLONE_SYSVSEM|CLONE_NEWCGROUP|CLONE_NEWUTS|CLONE_NEWIPC|CLONE_NEWUSER|CLONE_NEWPID|CLONE_NEWNET|0xffffffff81f8f07f) = -1 EINVAL (Invalid argument)
-2906  bpf(0xffffffff /* BPF_??? */, NULL, 0) = -1 EINVAL (Invalid argument)
-2906  openat(AT_FDCWD, ".", O_RDONLY|O_DIRECTORY) = 3
-2906  openat(3, "input.txt", O_RDONLY|O_NOCTTY|O_NONBLOCK) = 4
-2906  fstat(4, {st_mode=S_IFREG|0644, st_size=405264, ...}) = 0
-2906  read(4, "n6t/wVQQzMY0SPpGAP6XF8HGCEpLB4lx"..., 65536) = 65536
-2906  read(4, "2kAAVkzsiZfp9TCkwhGahUURDkBgqvT7"..., 32768) = 32768
-2906  read(4, "zIklI4WgM1/AkWkXMVBWutvH\n+nakiLu"..., 32768) = 32768
-2906  read(4, "rbbtHlo3m4kzCX5cAc8xtcd1m71g54Yc"..., 32768) = 32768
-2906  read(4, "OAB7Jo7lSqYHhcd\ntZBwVHaBthf3xWMc"..., 32768) = 32768
-2906  read(4, "JGPeDa0X0f+pO0ycmgj9+z4H7Ftmme3j"..., 32768) = 32768
-2906  read(4, "n9D3dW\n1eW9STE8n40pOYoARZKbt5Jf/"..., 32768) = 32768
-2906  read(4, "VMIo2rgxR+C4YJBwDNJrETCsQXbTEgDs"..., 32768) = 32768
-2906  read(4, "WPDbf1GB4viAXiKJH2V3e2iK7C5FVUsd"..., 32768) = 32768
-2906  read(4, "AyCVBTID4hzmCDNaAPZJ6p00d2MI82R\n"..., 32768) = 32768
-2906  read(4, "IyMMA/W03FcIChHOhdeyY5kbx+Iq77ql"..., 32768) = 32768
-2906  write(1, "\37\213\10\10(\10\3k\0\3input.txt\0\34\235\307\226\233J\24E\347\372\25\6"..., 262144) = 262144
-2906  read(4, "+7hWOnN5SiY47D78y4+tHp\nM5R4ZPzlB"..., 32768) = 12048
-2906  read(4, "", 20720)                = 0
-2906  write(1, "?\202k`\30n\330\245\320\303\222o\367\215\312{r(\3252\374\366\327KR\313.\223_\237n\306"..., 45850) = 45850
-2906  close(4)                          = 0
-2906  close(1)                          = 0
-2906  exit_group(0)                     = ?
-2906  +++ exited with 0 +++
+28393 execve("/usr/bin/gzip", ["/usr/bin/gzip", "-c", "input.txt"], 0x7ffdf088c998 /* 31 vars */) = 0
+28393 brk(NULL)                         = 0x5d561ecaa000
+28393 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x70da87d73000
+28393 openat(AT_FDCWD, "/home/home_game/OS-Project/programs/bin/poison.so", O_RDONLY|O_CLOEXEC) = 3
+28393 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+28393 fstat(3, {st_mode=S_IFREG|0755, st_size=15480, ...}) = 0
+28393 mmap(NULL, 16408, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x70da87d6e000
+28393 mmap(0x70da87d6f000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x70da87d6f000
+28393 mmap(0x70da87d70000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x70da87d70000
+28393 mmap(0x70da87d71000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x70da87d71000
+28393 close(3)                          = 0
+28393 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+28393 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+28393 fstat(3, {st_mode=S_IFREG|0644, st_size=20767, ...}) = 0
+28393 mmap(NULL, 20767, PROT_READ, MAP_PRIVATE, 3, 0) = 0x70da87d68000
+28393 close(3)                          = 0
+28393 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+28393 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \250\2\0\0\0\0\0"..., 832) = 832
+28393 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 840, 64) = 840
+28393 fstat(3, {st_mode=S_IFREG|0755, st_size=2190608, ...}) = 0
+28393 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 840, 64) = 840
+28393 mmap(NULL, 2231696, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x70da87a00000
+28393 mmap(0x70da87a28000, 1671168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x70da87a28000
+28393 mmap(0x70da87bc0000, 319488, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x70da87bc0000
+28393 mmap(0x70da87c0e000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20e000) = 0x70da87c0e000
+28393 mmap(0x70da87c14000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x70da87c14000
+28393 close(3)                          = 0
+28393 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x70da87d65000
+28393 arch_prctl(ARCH_SET_FS, 0x70da87d65740) = 0
+28393 set_tid_address(0x70da87d65d68)   = 28393
+28393 set_robust_list(0x70da87d65a20, 24) = 0
+28393 rseq(0x70da87d656a0, 0x20, 0, 0x53053053) = 0
+28393 mprotect(0x70da87c0e000, 16384, PROT_READ) = 0
+28393 mprotect(0x70da87d71000, 4096, PROT_READ) = 0
+28393 mprotect(0x5d561e684000, 4096, PROT_READ) = 0
+28393 mprotect(0x70da87db8000, 8192, PROT_READ) = 0
+28393 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+28393 getrandom("\xc4\x69\x5c\xc1\x75\x5d\xce\xfd", 8, GRND_NONBLOCK) = 8
+28393 munmap(0x70da87d68000, 20767)     = 0
+28393 ptrace(0xffffffffffffffff /* PTRACE_??? */, 0, NULL, NULL) = -1 ESRCH (No such process)
+28393 unshare(CLONE_NEWTIME|CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_NEWNS|CLONE_SYSVSEM|CLONE_NEWCGROUP|CLONE_NEWUTS|CLONE_NEWIPC|CLONE_NEWUSER|CLONE_NEWPID|CLONE_NEWNET|0xffffffff81f8f07f) = -1 EINVAL (Invalid argument)
+28393 bpf(0xffffffff /* BPF_??? */, NULL, 0) = -1 EINVAL (Invalid argument)
+28393 openat(AT_FDCWD, ".", O_RDONLY|O_DIRECTORY) = 3
+28393 openat(3, "input.txt", O_RDONLY|O_NOCTTY|O_NONBLOCK) = 4
+28393 fstat(4, {st_mode=S_IFREG|0644, st_size=405264, ...}) = 0
+28393 read(4, "AmfgQQlTc+AxsxbTY5xWNG0TW9IMg1dY"..., 65536) = 65536
+28393 read(4, "IlrPG377o9kZeDRH8VnirMgzPo5uwXMi"..., 32768) = 32768
+28393 read(4, "DrSMi5DI746lzJnL6ONswDEb\njfNVj4F"..., 32768) = 32768
+28393 read(4, "PeH2rAz2OvNof4zY9zjTL9+Nnd6Zntri"..., 32768) = 32768
+28393 read(4, "YSpbVadUKK0JjzG\nJk+LlUwNA7WqZprW"..., 32768) = 32768
+28393 read(4, "rxYMSLX1K88TKsGDTtTugLTMa6ODsyxD"..., 32768) = 32768
+28393 read(4, "eEb5z6\nSJiR8ypupF2/cXoTc7jHCKJoh"..., 32768) = 32768
+28393 read(4, "KLRNnhPfelwFwk804xXqrAmTEPTs/9N7"..., 32768) = 32768
+28393 read(4, "Rxz/AVMlINI8pc6TfXylCdTft6ssGATf"..., 32768) = 32768
+28393 read(4, "RxeYS9a+ayGTuaMJ+EQ14JtAqmFdkkg\n"..., 32768) = 32768
+28393 read(4, "jd4zJqZai9xGQyQxwg7xrE8+2b6nfVzJ"..., 32768) = 32768
+28393 write(1, "\37\213\10\10\2\343\5k\0\3input.txt\0\34\235\265\232\333j\24E{\277\212\n"..., 262144) = 262144
+28393 read(4, "kQX0hUzRbRs1CtPvGFOu/Y\nGuSFfA2OC"..., 32768) = 12048
+28393 read(4, "", 20720)                = 0
+28393 write(1, ">\16\177 \36\30\207X\3505G\353\276S\242h\30\267\204N\207\305\322\275Lr\322\356\200\234\23\357"..., 45851) = 45851
+28393 close(4)                          = 0
+28393 close(1)                          = 0
+28393 exit_group(0)                     = ?
+28393 +++ exited with 0 +++

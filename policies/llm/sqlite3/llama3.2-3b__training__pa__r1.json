@@ -1,0 +1,22 @@
+{
+  "program": "sqlite3",
+  "source": "llama3.2:3b",
+  "prompt": "a",
+  "repeat": 1,
+  "trace_used": "training",
+  "allow": [],
+  "json_valid": false,
+  "extraction": "failed",
+  "raw_output": "```json\n{\"allow\": [\"openat\", \"newfstatat\", \"exit_group\", \"futex\", \"futexat\", \"futexwait\", \"futexwaitpid\", \"futexkill\", \"futextimedwait\", \"futextimedwaitpid\", \"open\", \"openat2\", \"pipe\", \"read\", \"readv\", \"write\", \"writev\", \"execve\", \"execle\", \"execv\", \"execvpe\", \"fork\", \"fork2\", \"wait\", \"waitid\", \"waitpid\", \"kill\", \"killpg\", \"killpg\", \"kill\", \"pause\", \"pause\", \"nanosleep\", \"clock_nanosleep\", \"clock_getres\", \"clock_gettime\", \"getpid\", \"gettid\", \"getrlimit\", \"getrusage\", \"getpid\", \"getpid\", \"getpid\", \"getpgid\", \"getpgid\", \"getpgid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getppid\", \"getpp",
+  "temperature": 0.7,
+  "seed": 1,
+  "json_mode": false,
+  "wall_s": 10.25,
+  "total_s": 10.25,
+  "load_s": 0.0,
+  "prompt_tokens": 225,
+  "output_tokens": 1024,
+  "gen_s": 10.14,
+  "system_prompt": "You are a Linux security engineer who writes seccomp allow-lists.\nA seccomp allow-list is the set of system calls a program is permitted to make.\nEvery system call NOT on the list is blocked and the program is killed if it makes one.\n\nRules:\n1. Use exact Linux x86_64 system call names as in <asm/unistd_64.h>, for example: openat, newfstatat, exit_group.\n2. The program must keep working in ALL of its normal uses, not only the one described.\n3. Do NOT include system calls the program does not need for normal operation. Every extra system call is attack surface.\n4. Reply with JSON only, in exactly this form:\n{\"allow\": [\"syscall_1\", \"syscall_2\"], \"notes\": \"one short sentence\"}",
+  "user_prompt": "Program: sqlite3\nWhat it does: SQLite command-line shell: runs SQL against a database file.\n\nWrite the seccomp allow-list for this program."
+}

@@ -2,7 +2,7 @@
   "program": "sqlite3",
   "run": "poisoned",
   "trace_file": "/home/home_game/OS-Project/data/sqlite3/traces/poisoned.strace",
-  "total_calls": 319,
+  "total_calls": 320,
   "unique_syscalls": 35,
   "processes_or_threads": 1,
   "counts": {
@@ -32,7 +32,7 @@
     "socket": 2,
     "connect": 2,
     "newfstatat": 17,
-    "lseek": 1,
+    "lseek": 2,
     "getcwd": 1,
     "getpid": 5,
     "fcntl": 22,

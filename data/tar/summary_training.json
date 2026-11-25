@@ -2,7 +2,7 @@
   "program": "tar",
   "run": "training",
   "trace_file": "/home/home_game/OS-Project/data/tar/traces/training.strace",
-  "total_calls": 160,
+  "total_calls": 162,
   "unique_syscalls": 28,
   "processes_or_threads": 1,
   "counts": {
@@ -24,7 +24,7 @@
     "getrandom": 1,
     "munmap": 1,
     "statfs": 2,
-    "lseek": 4,
+    "lseek": 6,
     "fcntl": 7,
     "rt_sigaction": 1,
     "creat": 1,

@@ -1,308 +1,309 @@
-2915  execve("/usr/bin/sqlite3", ["/usr/bin/sqlite3", "test.db"], 0x7ffdaf902960 /* 30 vars */) = 0
-2915  brk(NULL)                         = 0x5864e5c93000
-2915  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73baa16ad000
-2915  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
-2915  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
-2915  fstat(3, {st_mode=S_IFREG|0644, st_size=20767, ...}) = 0
-2915  mmap(NULL, 20767, PROT_READ, MAP_PRIVATE, 3, 0) = 0x73baa16a7000
-2915  close(3)                          = 0
-2915  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libsqlite3.so.0", O_RDONLY|O_CLOEXEC) = 3
-2915  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
-2915  fstat(3, {st_mode=S_IFREG|0644, st_size=1522152, ...}) = 0
-2915  mmap(NULL, 1521592, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x73baa1533000
-2915  mmap(0x73baa1553000, 1142784, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20000) = 0x73baa1553000
-2915  mmap(0x73baa166a000, 212992, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x137000) = 0x73baa166a000
-2915  mmap(0x73baa169e000, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16b000) = 0x73baa169e000
-2915  close(3)                          = 0
-2915  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libreadline.so.8", O_RDONLY|O_CLOEXEC) = 3
-2915  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
-2915  fstat(3, {st_mode=S_IFREG|0644, st_size=364656, ...}) = 0
-2915  mmap(NULL, 368552, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x73baa14d9000
-2915  mmap(0x73baa14ef000, 204800, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x73baa14ef000
-2915  mmap(0x73baa1521000, 36864, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x48000) = 0x73baa1521000
-2915  mmap(0x73baa152a000, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x51000) = 0x73baa152a000
-2915  mmap(0x73baa1532000, 4008, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x73baa1532000
-2915  close(3)                          = 0
-2915  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
-2915  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
-2915  fstat(3, {st_mode=S_IFREG|0644, st_size=121272, ...}) = 0
-2915  mmap(NULL, 118936, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x73baa14bb000
-2915  mmap(0x73baa14be000, 77824, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x73baa14be000
-2915  mmap(0x73baa14d1000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x73baa14d1000
-2915  mmap(0x73baa14d7000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c000) = 0x73baa14d7000
-2915  close(3)                          = 0
-2915  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
-2915  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \250\2\0\0\0\0\0"..., 832) = 832
-2915  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 840, 64) = 840
-2915  fstat(3, {st_mode=S_IFREG|0755, st_size=2190608, ...}) = 0
-2915  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 840, 64) = 840
-2915  mmap(NULL, 2231696, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x73baa1200000
-2915  mmap(0x73baa1228000, 1671168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x73baa1228000
-2915  mmap(0x73baa13c0000, 319488, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x73baa13c0000
-2915  mmap(0x73baa140e000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20e000) = 0x73baa140e000
-2915  mmap(0x73baa1414000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x73baa1414000
-2915  close(3)                          = 0
-2915  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
-2915  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
-2915  fstat(3, {st_mode=S_IFREG|0644, st_size=1198376, ...}) = 0
-2915  mmap(NULL, 1200152, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x73baa10da000
-2915  mmap(0x73baa10ec000, 655360, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x12000) = 0x73baa10ec000
-2915  mmap(0x73baa118c000, 466944, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb2000) = 0x73baa118c000
-2915  mmap(0x73baa11fe000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x123000) = 0x73baa11fe000
-2915  close(3)                          = 0
-2915  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libtinfo.so.6", O_RDONLY|O_CLOEXEC) = 3
-2915  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
-2915  fstat(3, {st_mode=S_IFREG|0644, st_size=212504, ...}) = 0
-2915  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73baa14b9000
-2915  mmap(NULL, 215336, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x73baa1484000
-2915  mmap(0x73baa1492000, 81920, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x73baa1492000
-2915  mmap(0x73baa14a6000, 57344, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x22000) = 0x73baa14a6000
-2915  mmap(0x73baa14b4000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2f000) = 0x73baa14b4000
-2915  close(3)                          = 0
-2915  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73baa1481000
-2915  arch_prctl(ARCH_SET_FS, 0x73baa1481740) = 0
-2915  set_tid_address(0x73baa1481d68)   = 2915
-2915  set_robust_list(0x73baa1481a20, 24) = 0
-2915  rseq(0x73baa14816a0, 0x20, 0, 0x53053053) = 0
-2915  mprotect(0x73baa140e000, 16384, PROT_READ) = 0
-2915  mprotect(0x73baa14b4000, 16384, PROT_READ) = 0
-2915  mprotect(0x73baa11fe000, 4096, PROT_READ) = 0
-2915  mprotect(0x73baa14d7000, 4096, PROT_READ) = 0
-2915  mprotect(0x73baa152a000, 8192, PROT_READ) = 0
-2915  mprotect(0x73baa169e000, 16384, PROT_READ) = 0
-2915  mprotect(0x5864c6ba9000, 8192, PROT_READ) = 0
-2915  mprotect(0x73baa16f2000, 8192, PROT_READ) = 0
-2915  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
-2915  getrandom("\x32\x89\x3e\x84\xa6\x9c\x7d\x79", 8, GRND_NONBLOCK) = 8
-2915  munmap(0x73baa16a7000, 20767)     = 0
-2915  ioctl(2, TCGETS2, 0x7ffd01f2c650) = -1 ENOTTY (Inappropriate ioctl for device)
-2915  ioctl(1, TCGETS2, 0x7ffd01f2c650) = -1 ENOTTY (Inappropriate ioctl for device)
-2915  ioctl(0, TCGETS2, 0x7ffd01f2c650) = -1 ENOTTY (Inappropriate ioctl for device)
-2915  rt_sigaction(SIGINT, {sa_handler=0x5864c6b78580, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x73baa1245cb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-2915  brk(NULL)                         = 0x5864e5c93000
-2915  brk(0x5864e5cb4000)               = 0x5864e5cb4000
-2915  access("test.db", F_OK)           = -1 ENOENT (No such file or directory)
-2915  getuid()                          = 1000
-2915  socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
-2915  connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
-2915  close(3)                          = 0
-2915  socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
-2915  connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
-2915  close(3)                          = 0
-2915  newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=526, ...}, 0) = 0
-2915  newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
-2915  openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 3
-2915  fstat(3, {st_mode=S_IFREG|0644, st_size=526, ...}) = 0
-2915  read(3, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 526
-2915  read(3, "", 4096)                 = 0
-2915  fstat(3, {st_mode=S_IFREG|0644, st_size=526, ...}) = 0
-2915  close(3)                          = 0
-2915  openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 3
-2915  fstat(3, {st_mode=S_IFREG|0644, st_size=1386, ...}) = 0
-2915  lseek(3, 0, SEEK_SET)             = 0
-2915  read(3, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1386
-2915  close(3)                          = 0
-2915  openat(AT_FDCWD, "/home/home_game/.sqliterc", O_RDONLY) = -1 ENOENT (No such file or directory)
-2915  fstat(0, {st_mode=S_IFREG|0755, st_size=364, ...}) = 0
-2915  read(0, "-- Training workload for sqlite3"..., 4096) = 364
-2915  openat(AT_FDCWD, "test.db", O_RDONLY) = -1 ENOENT (No such file or directory)
-2915  getcwd("/tmp/sandbox_training_1ts976g5", 4096) = 31
-2915  newfstatat(AT_FDCWD, "/tmp", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=160, ...}, AT_SYMLINK_NOFOLLOW) = 0
-2915  newfstatat(AT_FDCWD, "/tmp/sandbox_training_1ts976g5", {st_mode=S_IFDIR|0700, st_size=80, ...}, AT_SYMLINK_NOFOLLOW) = 0
-2915  newfstatat(AT_FDCWD, "/tmp/sandbox_training_1ts976g5/test.db", 0x7ffd01f29970, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
-2915  getpid()                          = 2915
-2915  getpid()                          = 2915
-2915  openat(AT_FDCWD, "/tmp/sandbox_training_1ts976g5/test.db", O_RDWR|O_CREAT|O_NOFOLLOW|O_CLOEXEC, 0644) = 3
-2915  fstat(3, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
-2915  fstat(3, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
-2915  newfstatat(AT_FDCWD, "/tmp/sandbox_training_1ts976g5/test.db", {st_mode=S_IFREG|0644, st_size=0, ...}, 0) = 0
-2915  pread64(3, "", 100, 0)            = 0
-2915  fcntl(3, F_SETLK, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=1073741824, l_len=1}) = 0
-2915  fcntl(3, F_SETLK, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=1073741826, l_len=510}) = 0
-2915  fcntl(3, F_SETLK, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=1073741824, l_len=1}) = 0
-2915  newfstatat(AT_FDCWD, "/tmp/sandbox_training_1ts976g5/test.db-journal", 0x7ffd01f2b470, 0) = -1 ENOENT (No such file or directory)
-2915  newfstatat(AT_FDCWD, "/tmp/sandbox_training_1ts976g5/test.db-wal", 0x7ffd01f2b470, 0) = -1 ENOENT (No such file or directory)
-2915  fstat(3, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
-2915  brk(0x5864e5cdd000)               = 0x5864e5cdd000
-2915  fcntl(3, F_SETLK, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
-2915  fcntl(3, F_SETLK, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=1073741824, l_len=1}) = 0
-2915  fcntl(3, F_SETLK, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=1073741826, l_len=510}) = 0
-2915  fcntl(3, F_SETLK, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=1073741824, l_len=1}) = 0
-2915  newfstatat(AT_FDCWD, "/tmp/sandbox_training_1ts976g5/test.db-journal", 0x7ffd01f2b690, 0) = -1 ENOENT (No such file or directory)
-2915  pread64(3, "", 16, 24)            = 0
-2915  newfstatat(AT_FDCWD, "/tmp/sandbox_training_1ts976g5/test.db-wal", 0x7ffd01f2b690, 0) = -1 ENOENT (No such file or directory)
-2915  fstat(3, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
-2915  fcntl(3, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=1073741825, l_len=1}) = 0
-2915  getpid()                          = 2915
-2915  newfstatat(AT_FDCWD, "/tmp/sandbox_training_1ts976g5/test.db", {st_mode=S_IFREG|0644, st_size=0, ...}, 0) = 0
-2915  openat(AT_FDCWD, "/tmp/sandbox_training_1ts976g5/test.db-journal", O_RDWR|O_CREAT|O_NOFOLLOW|O_CLOEXEC, 0644) = 4
-2915  fstat(4, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
-2915  geteuid()                         = 1000
-2915  getpid()                          = 2915
-2915  openat(AT_FDCWD, "/dev/urandom", O_RDONLY|O_CLOEXEC) = 5
-2915  read(5, "AU\3750\204\301J6\35^p\376V\355\1\7)\267\303\360\304*\2522}\v\305\25\255m\233\275"..., 44) = 44
-2915  close(5)                          = 0
-2915  pwrite64(4, "\0\0\0\0\0\0\0\0\0\0\0\0SR\3649\0\0\0\0\0\0\2\0\0\0\20\0\0\0\0\0"..., 512, 0) = 512
-2915  fcntl(3, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=1073741824, l_len=1}) = 0
-2915  fcntl(3, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=1073741826, l_len=510}) = 0
-2915  pread64(4, "", 8, 512)            = 0
-2915  fdatasync(4)                      = 0
-2915  openat(AT_FDCWD, "/tmp/sandbox_training_1ts976g5", O_RDONLY|O_CLOEXEC) = 5
-2915  fdatasync(5)                      = 0
-2915  close(5)                          = 0
-2915  pwrite64(4, "\331\325\5\371 \241c\327\0\0\0\0", 12, 0) = 12
-2915  fdatasync(4)                      = 0
-2915  pwrite64(3, "SQLite format 3\0\20\0\1\1\0@  \0\0\0\1\0\0\0\2"..., 4096, 0) = 4096
-2915  pwrite64(3, "\r\0\0\0\0\20\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 4096, 4096) = 4096
-2915  fdatasync(3)                      = 0
-2915  close(4)                          = 0
-2915  unlink("/tmp/sandbox_training_1ts976g5/test.db-journal") = 0
-2915  fcntl(3, F_SETLK, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=1073741826, l_len=510}) = 0
-2915  fcntl(3, F_SETLK, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=1073741824, l_len=2}) = 0
-2915  fcntl(3, F_SETLK, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
-2915  fcntl(3, F_SETLK, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=1073741824, l_len=1}) = 0
-2915  fcntl(3, F_SETLK, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=1073741826, l_len=510}) = 0
-2915  fcntl(3, F_SETLK, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=1073741824, l_len=1}) = 0
-2915  newfstatat(AT_FDCWD, "/tmp/sandbox_training_1ts976g5/test.db-journal", 0x7ffd01f2b690, 0) = -1 ENOENT (No such file or directory)
-2915  pread64(3, "\0\0\0\1\0\0\0\2\0\0\0\0\0\0\0\0", 16, 24) = 16
-2915  newfstatat(AT_FDCWD, "/tmp/sandbox_training_1ts976g5/test.db-wal", 0x7ffd01f2b690, 0) = -1 ENOENT (No such file or directory)
-2915  fstat(3, {st_mode=S_IFREG|0644, st_size=8192, ...}) = 0
-2915  fcntl(3, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=1073741825, l_len=1}) = 0
-2915  newfstatat(AT_FDCWD, "/tmp/sandbox_training_1ts976g5/test.db", {st_mode=S_IFREG|0644, st_size=8192, ...}, 0) = 0
-2915  getpid()                          = 2915
-2915  newfstatat(AT_FDCWD, "/tmp/sandbox_training_1ts976g5/test.db", {st_mode=S_IFREG|0644, st_size=8192, ...}, 0) = 0
-2915  openat(AT_FDCWD, "/tmp/sandbox_training_1ts976g5/test.db-journal", O_RDWR|O_CREAT|O_NOFOLLOW|O_CLOEXEC, 0644) = 4
-2915  fstat(4, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
-2915  geteuid()                         = 1000
-2915  pwrite64(4, "\0\0\0\0\0\0\0\0\0\0\0\0\316\1\216\350\0\0\0\2\0\0\2\0\0\0\20\0\0\0\0\0"..., 512, 0) = 512
-2915  pwrite64(4, "\0\0\0\2", 4, 512)   = 4
-2915  pwrite64(4, "\r\0\0\0\0\20\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 4096, 516) = 4096
-2915  pwrite64(4, "\316\1\216\350", 4, 4612) = 4
-2915  pwrite64(4, "\0\0\0\1", 4, 4616)  = 4
-2915  pwrite64(4, "SQLite format 3\0\20\0\1\1\0@  \0\0\0\1\0\0\0\2"..., 4096, 4620) = 4096
-2915  pwrite64(4, "\316\1\216\350", 4, 8716) = 4
-2915  brk(0x5864e5cfe000)               = 0x5864e5cfe000
-2915  brk(0x5864e5d20000)               = 0x5864e5d20000
-2915  brk(0x5864e5d41000)               = 0x5864e5d41000
-2915  fcntl(3, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=1073741824, l_len=1}) = 0
-2915  fcntl(3, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=1073741826, l_len=510}) = 0
-2915  pread64(4, "", 8, 9216)           = 0
-2915  fdatasync(4)                      = 0
-2915  openat(AT_FDCWD, "/tmp/sandbox_training_1ts976g5", O_RDONLY|O_CLOEXEC) = 5
-2915  fdatasync(5)                      = 0
-2915  close(5)                          = 0
-2915  pwrite64(4, "\331\325\5\371 \241c\327\0\0\0\2", 12, 0) = 12
-2915  fdatasync(4)                      = 0
-2915  pwrite64(3, "SQLite format 3\0\20\0\1\1\0@  \0\0\0\2\0\0\0b"..., 4096, 0) = 4096
-2915  pwrite64(3, "\5\0\0\0_\r\264\0\0\0\0b\17\372\17\364\17\356\17\350\17\342\17\334\17\326\17\320\17\312\17\304"..., 4096, 4096) = 4096
-2915  pwrite64(3, "\r\0\0\0\333\1\311\0\17\360\17\340\17\320\17\300\17\260\17\240\17\220\17\200\17p\17f\17U\17D"..., 4096, 8192) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\264\0\17\365\17\343\17\321\17\277\17\255\17\233\17\211\17w\17e\17S\17H\0176"..., 4096, 12288) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17w\17e\17S\17A\17/"..., 4096, 16384) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 20480) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\302\0\17\356\17\334\17\312\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 24576) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\274\0\17\357\17\345\17\324\17\303\17\262\17\241\17\220\17\177\17m\17[\17I\17>"..., 4096, 28672) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17p\17e\17S\17A\17/"..., 4096, 32768) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\211\17w\17e\17S\17A\17/"..., 4096, 36864) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 40960) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\265\0\17\356\17\334\17\321\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 45056) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\267\0\17\356\17\334\17\312\17\271\17\250\17\227\17\206\17u\17d\17Z\17I\178"..., 4096, 49152) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\211\17w\17e\17S\17A\17/"..., 4096, 53248) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 57344) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\264\0\17\356\17\334\17\321\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 61440) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17p\17^\17S\17A\17/"..., 4096, 65536) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\267\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17w\17f\17U\17D\0173"..., 4096, 69632) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 73728) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\265\0\17\356\17\334\17\321\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 77824) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17p\17^\17S\17A\17/"..., 4096, 81920) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17w\17e\17S\17A\17/"..., 4096, 86016) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\263\0\17\356\17\334\17\312\17\270\17\246\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 90112) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\270\0\17\357\17\336\17\324\17\303\17\261\17\237\17\215\17{\17i\17W\17E\0173"..., 4096, 94208) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17p\17^\17S\17A\17/"..., 4096, 98304) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17w\17e\17S\17A\17/"..., 4096, 102400) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 106496) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 110592) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\277\0\17\357\17\345\17\324\17\303\17\262\17\241\17\220\17\177\17n\17]\17K\17@"..., 4096, 114688) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17p\17e\17S\17A\17/"..., 4096, 118784) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\224\17\211\17w\17e\17S\17A\17/"..., 4096, 122880) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 126976) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\264\0\17\356\17\334\17\321\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 131072) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\270\0\17\356\17\334\17\312\17\270\17\246\17\225\17\204\17s\17b\17X\17G\0176"..., 4096, 135168) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\224\17\211\17w\17e\17S\17A\17/"..., 4096, 139264) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 143360) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\264\0\17\356\17\334\17\321\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 147456) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17p\17^\17S\17A\17/"..., 4096, 151552) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\267\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17w\17e\17S\17B\0171"..., 4096, 155648) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\301\0\17\357\17\335\17\313\17\271\17\256\17\234\17\212\17x\17f\17T\17B\0170"..., 4096, 159744) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\264\0\17\356\17\334\17\321\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 163840) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17p\17^\17S\17A\17/"..., 4096, 167936) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17w\17e\17S\17A\17/"..., 4096, 172032) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\262\0\17\356\17\334\17\312\17\270\17\246\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 176128) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\273\0\17\357\17\336\17\324\17\303\17\262\17\241\17\217\17}\17k\17Y\17G\0175"..., 4096, 180224) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17p\17^\17S\17A\17/"..., 4096, 184320) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17w\17e\17S\17A\17/"..., 4096, 188416) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 192512) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 196608) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\277\0\17\356\17\343\17\322\17\301\17\260\17\237\17\216\17}\17l\17[\17J\17A"..., 4096, 200704) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17p\17e\17S\17A\17/"..., 4096, 204800) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\211\17w\17e\17S\17A\17/"..., 4096, 208896) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 212992) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\265\0\17\356\17\334\17\321\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 217088) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\267\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17q\17`\17V\17E\0174"..., 4096, 221184) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\211\17w\17e\17S\17A\17/"..., 4096, 225280) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 229376) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\265\0\17\356\17\334\17\321\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 233472) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17p\17^\17S\17A\17/"..., 4096, 237568) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\264\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17w\17e\17S\17A\17/"..., 4096, 241664) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\302\0\17\357\17\336\17\315\17\273\17\260\17\236\17\214\17z\17h\17V\17D\0172"..., 4096, 245760) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\265\0\17\356\17\334\17\321\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 249856) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17p\17^\17S\17A\17/"..., 4096, 253952) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17w\17e\17S\17A\17/"..., 4096, 258048) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 262144) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\266\0\17\357\17\336\17\315\17\303\17\262\17\241\17\220\17\177\17n\17\\\17J\178"..., 4096, 266240) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\265\0\17\365\17\343\17\321\17\277\17\255\17\233\17\211\17w\17e\17S\17H\0176"..., 4096, 270336) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17w\17e\17S\17A\17/"..., 4096, 274432) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 278528) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 282624) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\276\0\17\356\17\343\17\321\17\277\17\256\17\235\17\214\17{\17j\17Y\17H\17>"..., 4096, 286720) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17p\17e\17S\17A\17/"..., 4096, 290816) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\224\17\211\17w\17e\17S\17A\17/"..., 4096, 294912) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 299008) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\264\0\17\356\17\334\17\321\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 303104) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\267\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17p\17^\17T\17C\0172"..., 4096, 307200) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\224\17\212\17x\17f\17T\17B\0170"..., 4096, 311296) = 4096
-2915  pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 315392) = 4096
-2915  pwrite64(3, "\r\0\0\0\325\1\264\0\17\356\17\334\17\321\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 319488) = 4096
-2915  pwrite64(3, "\r\0\0\0\313\1\246\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17p\17^\17S\17A\17/"..., 4096, 323584) = 4096
-2915  pwrite64(3, "\r\0\0\0\312\1\243\0\17\355\17\332\17\307\17\264\17\241\17\216\17\202\17o\17\\\17I\0176\17#"..., 4096, 327680) = 4096
-2915  pwrite64(3, "\r\0\0\0\312\1\242\0\17\355\17\332\17\307\17\264\17\250\17\225\17\202\17o\17\\\17I\0176\17#"..., 4096, 331776) = 4096
-2915  pwrite64(3, "\r\0\0\0\312\1\244\0\17\355\17\332\17\316\17\273\17\250\17\225\17\202\17p\17^\17L\17:\17("..., 4096, 335872) = 4096
-2915  pwrite64(3, "\r\0\0\0\313\1\237\0\17\365\17\343\17\321\17\277\17\255\17\233\17\211\17w\17e\17R\17F\0173"..., 4096, 339968) = 4096
-2915  pwrite64(3, "\r\0\0\0\312\1\242\0\17\355\17\332\17\307\17\264\17\241\17\216\17{\17o\17\\\17I\0176\17#"..., 4096, 344064) = 4096
-2915  pwrite64(3, "\r\0\0\0\312\1\243\0\17\355\17\332\17\307\17\264\17\241\17\225\17\202\17o\17\\\17I\0176\17#"..., 4096, 348160) = 4096
-2915  pwrite64(3, "\r\0\0\0\312\1\242\0\17\355\17\332\17\307\17\273\17\250\17\225\17\202\17o\17\\\17I\0176\17#"..., 4096, 352256) = 4096
-2915  pwrite64(3, "\r\0\0\0\312\1\252\0\17\355\17\341\17\316\17\273\17\250\17\225\17\202\17o\17\\\17I\0176\17*"..., 4096, 356352) = 4096
-2915  pwrite64(3, "\r\0\0\0\312\1\242\0\17\355\17\332\17\307\17\264\17\241\17\216\17{\17h\17U\17I\0176\17#"..., 4096, 360448) = 4096
-2915  pwrite64(3, "\r\0\0\0\312\1\242\0\17\355\17\332\17\307\17\264\17\241\17\216\17{\17o\17\\\17I\0176\17#"..., 4096, 364544) = 4096
-2915  pwrite64(3, "\r\0\0\0\312\1\243\0\17\355\17\332\17\307\17\264\17\241\17\225\17\202\17o\17\\\17I\0176\17#"..., 4096, 368640) = 4096
-2915  pwrite64(3, "\r\0\0\0\312\1\242\0\17\355\17\332\17\307\17\273\17\250\17\225\17\202\17o\17\\\17I\0176\17#"..., 4096, 372736) = 4096
-2915  pwrite64(3, "\r\0\0\0\312\1\252\0\17\355\17\341\17\316\17\273\17\250\17\225\17\202\17o\17\\\17I\0176\17+"..., 4096, 376832) = 4096
-2915  pwrite64(3, "\r\0\0\0\312\1\242\0\17\355\17\332\17\307\17\264\17\241\17\216\17{\17h\17U\17I\0176\17#"..., 4096, 380928) = 4096
-2915  pwrite64(3, "\r\0\0\0\312\1\243\0\17\355\17\332\17\307\17\264\17\241\17\216\17{\17p\17^\17L\17:\17("..., 4096, 385024) = 4096
-2915  pwrite64(3, "\r\0\0\0\312\1\253\0\17\356\17\334\17\312\17\270\17\246\17\233\17\211\17w\17e\17R\17?\17,"..., 4096, 389120) = 4096
-2915  pwrite64(3, "\r\0\0\0\312\1\243\0\17\356\17\333\17\310\17\274\17\251\17\226\17\203\17p\17]\17J\0177\17$"..., 4096, 393216) = 4096
-2915  pwrite64(3, "\r\0\0\0\2\17\342\0\17\355\17\342\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 4096, 397312) = 4096
-2915  fdatasync(3)                      = 0
-2915  close(4)                          = 0
-2915  unlink("/tmp/sandbox_training_1ts976g5/test.db-journal") = 0
-2915  fcntl(3, F_SETLK, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=1073741826, l_len=510}) = 0
-2915  fcntl(3, F_SETLK, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=1073741824, l_len=2}) = 0
-2915  fcntl(3, F_SETLK, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
-2915  read(0, "", 4096)                 = 0
-2915  newfstatat(AT_FDCWD, "/tmp/sandbox_training_1ts976g5/test.db", {st_mode=S_IFREG|0644, st_size=401408, ...}, 0) = 0
-2915  brk(0x5864e5ce0000)               = 0x5864e5ce0000
-2915  fstat(3, {st_mode=S_IFREG|0644, st_size=401408, ...}) = 0
-2915  newfstatat(AT_FDCWD, "/tmp/sandbox_training_1ts976g5/test.db", {st_mode=S_IFREG|0644, st_size=401408, ...}, 0) = 0
-2915  close(3)                          = 0
-2915  brk(0x5864e5cdf000)               = 0x5864e5cdf000
-2915  exit_group(0)                     = ?
-2915  +++ exited with 0 +++
+28402 execve("/usr/bin/sqlite3", ["/usr/bin/sqlite3", "test.db"], 0x7ffea59d4460 /* 30 vars */) = 0
+28402 brk(NULL)                         = 0x6229358ad000
+28402 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6fb0e2f000
+28402 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+28402 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+28402 fstat(3, {st_mode=S_IFREG|0644, st_size=20767, ...}) = 0
+28402 mmap(NULL, 20767, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6fb0e29000
+28402 close(3)                          = 0
+28402 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libsqlite3.so.0", O_RDONLY|O_CLOEXEC) = 3
+28402 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+28402 fstat(3, {st_mode=S_IFREG|0644, st_size=1522152, ...}) = 0
+28402 mmap(NULL, 1521592, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6fb0cb5000
+28402 mmap(0x7f6fb0cd5000, 1142784, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20000) = 0x7f6fb0cd5000
+28402 mmap(0x7f6fb0dec000, 212992, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x137000) = 0x7f6fb0dec000
+28402 mmap(0x7f6fb0e20000, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16b000) = 0x7f6fb0e20000
+28402 close(3)                          = 0
+28402 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libreadline.so.8", O_RDONLY|O_CLOEXEC) = 3
+28402 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+28402 fstat(3, {st_mode=S_IFREG|0644, st_size=364656, ...}) = 0
+28402 mmap(NULL, 368552, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6fb0c5b000
+28402 mmap(0x7f6fb0c71000, 204800, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7f6fb0c71000
+28402 mmap(0x7f6fb0ca3000, 36864, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x48000) = 0x7f6fb0ca3000
+28402 mmap(0x7f6fb0cac000, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x51000) = 0x7f6fb0cac000
+28402 mmap(0x7f6fb0cb4000, 4008, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6fb0cb4000
+28402 close(3)                          = 0
+28402 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+28402 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+28402 fstat(3, {st_mode=S_IFREG|0644, st_size=121272, ...}) = 0
+28402 mmap(NULL, 118936, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6fb0c3d000
+28402 mmap(0x7f6fb0c40000, 77824, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f6fb0c40000
+28402 mmap(0x7f6fb0c53000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7f6fb0c53000
+28402 mmap(0x7f6fb0c59000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c000) = 0x7f6fb0c59000
+28402 close(3)                          = 0
+28402 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+28402 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \250\2\0\0\0\0\0"..., 832) = 832
+28402 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 840, 64) = 840
+28402 fstat(3, {st_mode=S_IFREG|0755, st_size=2190608, ...}) = 0
+28402 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 840, 64) = 840
+28402 mmap(NULL, 2231696, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6fb0a00000
+28402 mmap(0x7f6fb0a28000, 1671168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f6fb0a28000
+28402 mmap(0x7f6fb0bc0000, 319488, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f6fb0bc0000
+28402 mmap(0x7f6fb0c0e000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20e000) = 0x7f6fb0c0e000
+28402 mmap(0x7f6fb0c14000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6fb0c14000
+28402 close(3)                          = 0
+28402 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+28402 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+28402 fstat(3, {st_mode=S_IFREG|0644, st_size=1198376, ...}) = 0
+28402 mmap(NULL, 1200152, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6fb08da000
+28402 mmap(0x7f6fb08ec000, 655360, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x12000) = 0x7f6fb08ec000
+28402 mmap(0x7f6fb098c000, 466944, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb2000) = 0x7f6fb098c000
+28402 mmap(0x7f6fb09fe000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x123000) = 0x7f6fb09fe000
+28402 close(3)                          = 0
+28402 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libtinfo.so.6", O_RDONLY|O_CLOEXEC) = 3
+28402 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+28402 fstat(3, {st_mode=S_IFREG|0644, st_size=212504, ...}) = 0
+28402 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6fb0c3b000
+28402 mmap(NULL, 215336, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6fb08a5000
+28402 mmap(0x7f6fb08b3000, 81920, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7f6fb08b3000
+28402 mmap(0x7f6fb08c7000, 57344, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x22000) = 0x7f6fb08c7000
+28402 mmap(0x7f6fb08d5000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2f000) = 0x7f6fb08d5000
+28402 close(3)                          = 0
+28402 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6fb0c38000
+28402 arch_prctl(ARCH_SET_FS, 0x7f6fb0c38740) = 0
+28402 set_tid_address(0x7f6fb0c38d68)   = 28402
+28402 set_robust_list(0x7f6fb0c38a20, 24) = 0
+28402 rseq(0x7f6fb0c386a0, 0x20, 0, 0x53053053) = 0
+28402 mprotect(0x7f6fb0c0e000, 16384, PROT_READ) = 0
+28402 mprotect(0x7f6fb08d5000, 16384, PROT_READ) = 0
+28402 mprotect(0x7f6fb09fe000, 4096, PROT_READ) = 0
+28402 mprotect(0x7f6fb0c59000, 4096, PROT_READ) = 0
+28402 mprotect(0x7f6fb0cac000, 8192, PROT_READ) = 0
+28402 mprotect(0x7f6fb0e20000, 16384, PROT_READ) = 0
+28402 mprotect(0x622930a3d000, 8192, PROT_READ) = 0
+28402 mprotect(0x7f6fb0e74000, 8192, PROT_READ) = 0
+28402 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+28402 getrandom("\xfe\x81\x55\xb7\xd3\x40\x6a\x9b", 8, GRND_NONBLOCK) = 8
+28402 munmap(0x7f6fb0e29000, 20767)     = 0
+28402 ioctl(2, TCGETS2, 0x7ffe24612ff0) = -1 ENOTTY (Inappropriate ioctl for device)
+28402 ioctl(1, TCGETS2, 0x7ffe24612ff0) = -1 ENOTTY (Inappropriate ioctl for device)
+28402 ioctl(0, TCGETS2, 0x7ffe24612ff0) = -1 ENOTTY (Inappropriate ioctl for device)
+28402 rt_sigaction(SIGINT, {sa_handler=0x622930a0c580, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f6fb0a45cb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+28402 brk(NULL)                         = 0x6229358ad000
+28402 brk(0x6229358ce000)               = 0x6229358ce000
+28402 access("test.db", F_OK)           = -1 ENOENT (No such file or directory)
+28402 getuid()                          = 1000
+28402 socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+28402 connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+28402 close(3)                          = 0
+28402 socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+28402 connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+28402 close(3)                          = 0
+28402 newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=526, ...}, 0) = 0
+28402 newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+28402 openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 3
+28402 fstat(3, {st_mode=S_IFREG|0644, st_size=526, ...}) = 0
+28402 read(3, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 526
+28402 read(3, "", 4096)                 = 0
+28402 fstat(3, {st_mode=S_IFREG|0644, st_size=526, ...}) = 0
+28402 close(3)                          = 0
+28402 openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 3
+28402 fstat(3, {st_mode=S_IFREG|0644, st_size=1433, ...}) = 0
+28402 lseek(3, 0, SEEK_SET)             = 0
+28402 read(3, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1433
+28402 lseek(3, 1386, SEEK_SET)          = 1386
+28402 close(3)                          = 0
+28402 openat(AT_FDCWD, "/home/home_game/.sqliterc", O_RDONLY) = -1 ENOENT (No such file or directory)
+28402 fstat(0, {st_mode=S_IFREG|0755, st_size=364, ...}) = 0
+28402 read(0, "-- Training workload for sqlite3"..., 4096) = 364
+28402 openat(AT_FDCWD, "test.db", O_RDONLY) = -1 ENOENT (No such file or directory)
+28402 getcwd("/tmp/sandbox_training_idkit4q9", 4096) = 31
+28402 newfstatat(AT_FDCWD, "/tmp", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=180, ...}, AT_SYMLINK_NOFOLLOW) = 0
+28402 newfstatat(AT_FDCWD, "/tmp/sandbox_training_idkit4q9", {st_mode=S_IFDIR|0700, st_size=80, ...}, AT_SYMLINK_NOFOLLOW) = 0
+28402 newfstatat(AT_FDCWD, "/tmp/sandbox_training_idkit4q9/test.db", 0x7ffe24610310, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+28402 getpid()                          = 28402
+28402 getpid()                          = 28402
+28402 openat(AT_FDCWD, "/tmp/sandbox_training_idkit4q9/test.db", O_RDWR|O_CREAT|O_NOFOLLOW|O_CLOEXEC, 0644) = 3
+28402 fstat(3, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+28402 fstat(3, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+28402 newfstatat(AT_FDCWD, "/tmp/sandbox_training_idkit4q9/test.db", {st_mode=S_IFREG|0644, st_size=0, ...}, 0) = 0
+28402 pread64(3, "", 100, 0)            = 0
+28402 fcntl(3, F_SETLK, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=1073741824, l_len=1}) = 0
+28402 fcntl(3, F_SETLK, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=1073741826, l_len=510}) = 0
+28402 fcntl(3, F_SETLK, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=1073741824, l_len=1}) = 0
+28402 newfstatat(AT_FDCWD, "/tmp/sandbox_training_idkit4q9/test.db-journal", 0x7ffe24611e10, 0) = -1 ENOENT (No such file or directory)
+28402 newfstatat(AT_FDCWD, "/tmp/sandbox_training_idkit4q9/test.db-wal", 0x7ffe24611e10, 0) = -1 ENOENT (No such file or directory)
+28402 fstat(3, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+28402 brk(0x6229358f7000)               = 0x6229358f7000
+28402 fcntl(3, F_SETLK, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+28402 fcntl(3, F_SETLK, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=1073741824, l_len=1}) = 0
+28402 fcntl(3, F_SETLK, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=1073741826, l_len=510}) = 0
+28402 fcntl(3, F_SETLK, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=1073741824, l_len=1}) = 0
+28402 newfstatat(AT_FDCWD, "/tmp/sandbox_training_idkit4q9/test.db-journal", 0x7ffe24612030, 0) = -1 ENOENT (No such file or directory)
+28402 pread64(3, "", 16, 24)            = 0
+28402 newfstatat(AT_FDCWD, "/tmp/sandbox_training_idkit4q9/test.db-wal", 0x7ffe24612030, 0) = -1 ENOENT (No such file or directory)
+28402 fstat(3, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+28402 fcntl(3, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=1073741825, l_len=1}) = 0
+28402 getpid()                          = 28402
+28402 newfstatat(AT_FDCWD, "/tmp/sandbox_training_idkit4q9/test.db", {st_mode=S_IFREG|0644, st_size=0, ...}, 0) = 0
+28402 openat(AT_FDCWD, "/tmp/sandbox_training_idkit4q9/test.db-journal", O_RDWR|O_CREAT|O_NOFOLLOW|O_CLOEXEC, 0644) = 4
+28402 fstat(4, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+28402 geteuid()                         = 1000
+28402 getpid()                          = 28402
+28402 openat(AT_FDCWD, "/dev/urandom", O_RDONLY|O_CLOEXEC) = 5
+28402 read(5, "\234\1\3261\201\232\342}.\3\346\370\231!\376\304\373\271$}w'\2440\357\373i2\202\312A\361"..., 44) = 44
+28402 close(5)                          = 0
+28402 pwrite64(4, "\0\0\0\0\0\0\0\0\0\0\0\0Pq\37!\0\0\0\0\0\0\2\0\0\0\20\0\0\0\0\0"..., 512, 0) = 512
+28402 fcntl(3, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=1073741824, l_len=1}) = 0
+28402 fcntl(3, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=1073741826, l_len=510}) = 0
+28402 pread64(4, "", 8, 512)            = 0
+28402 fdatasync(4)                      = 0
+28402 openat(AT_FDCWD, "/tmp/sandbox_training_idkit4q9", O_RDONLY|O_CLOEXEC) = 5
+28402 fdatasync(5)                      = 0
+28402 close(5)                          = 0
+28402 pwrite64(4, "\331\325\5\371 \241c\327\0\0\0\0", 12, 0) = 12
+28402 fdatasync(4)                      = 0
+28402 pwrite64(3, "SQLite format 3\0\20\0\1\1\0@  \0\0\0\1\0\0\0\2"..., 4096, 0) = 4096
+28402 pwrite64(3, "\r\0\0\0\0\20\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 4096, 4096) = 4096
+28402 fdatasync(3)                      = 0
+28402 close(4)                          = 0
+28402 unlink("/tmp/sandbox_training_idkit4q9/test.db-journal") = 0
+28402 fcntl(3, F_SETLK, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=1073741826, l_len=510}) = 0
+28402 fcntl(3, F_SETLK, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=1073741824, l_len=2}) = 0
+28402 fcntl(3, F_SETLK, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+28402 fcntl(3, F_SETLK, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=1073741824, l_len=1}) = 0
+28402 fcntl(3, F_SETLK, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=1073741826, l_len=510}) = 0
+28402 fcntl(3, F_SETLK, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=1073741824, l_len=1}) = 0
+28402 newfstatat(AT_FDCWD, "/tmp/sandbox_training_idkit4q9/test.db-journal", 0x7ffe24612030, 0) = -1 ENOENT (No such file or directory)
+28402 pread64(3, "\0\0\0\1\0\0\0\2\0\0\0\0\0\0\0\0", 16, 24) = 16
+28402 newfstatat(AT_FDCWD, "/tmp/sandbox_training_idkit4q9/test.db-wal", 0x7ffe24612030, 0) = -1 ENOENT (No such file or directory)
+28402 fstat(3, {st_mode=S_IFREG|0644, st_size=8192, ...}) = 0
+28402 fcntl(3, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=1073741825, l_len=1}) = 0
+28402 newfstatat(AT_FDCWD, "/tmp/sandbox_training_idkit4q9/test.db", {st_mode=S_IFREG|0644, st_size=8192, ...}, 0) = 0
+28402 getpid()                          = 28402
+28402 newfstatat(AT_FDCWD, "/tmp/sandbox_training_idkit4q9/test.db", {st_mode=S_IFREG|0644, st_size=8192, ...}, 0) = 0
+28402 openat(AT_FDCWD, "/tmp/sandbox_training_idkit4q9/test.db-journal", O_RDWR|O_CREAT|O_NOFOLLOW|O_CLOEXEC, 0644) = 4
+28402 fstat(4, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+28402 geteuid()                         = 1000
+28402 pwrite64(4, "\0\0\0\0\0\0\0\0\0\0\0\0u\201vI\0\0\0\2\0\0\2\0\0\0\20\0\0\0\0\0"..., 512, 0) = 512
+28402 pwrite64(4, "\0\0\0\2", 4, 512)   = 4
+28402 pwrite64(4, "\r\0\0\0\0\20\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 4096, 516) = 4096
+28402 pwrite64(4, "u\201vI", 4, 4612)   = 4
+28402 pwrite64(4, "\0\0\0\1", 4, 4616)  = 4
+28402 pwrite64(4, "SQLite format 3\0\20\0\1\1\0@  \0\0\0\1\0\0\0\2"..., 4096, 4620) = 4096
+28402 pwrite64(4, "u\201vI", 4, 8716)   = 4
+28402 brk(0x622935918000)               = 0x622935918000
+28402 brk(0x62293593a000)               = 0x62293593a000
+28402 brk(0x62293595b000)               = 0x62293595b000
+28402 fcntl(3, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=1073741824, l_len=1}) = 0
+28402 fcntl(3, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=1073741826, l_len=510}) = 0
+28402 pread64(4, "", 8, 9216)           = 0
+28402 fdatasync(4)                      = 0
+28402 openat(AT_FDCWD, "/tmp/sandbox_training_idkit4q9", O_RDONLY|O_CLOEXEC) = 5
+28402 fdatasync(5)                      = 0
+28402 close(5)                          = 0
+28402 pwrite64(4, "\331\325\5\371 \241c\327\0\0\0\2", 12, 0) = 12
+28402 fdatasync(4)                      = 0
+28402 pwrite64(3, "SQLite format 3\0\20\0\1\1\0@  \0\0\0\2\0\0\0b"..., 4096, 0) = 4096
+28402 pwrite64(3, "\5\0\0\0_\r\264\0\0\0\0b\17\372\17\364\17\356\17\350\17\342\17\334\17\326\17\320\17\312\17\304"..., 4096, 4096) = 4096
+28402 pwrite64(3, "\r\0\0\0\333\1\311\0\17\360\17\340\17\320\17\300\17\260\17\240\17\220\17\200\17p\17f\17U\17D"..., 4096, 8192) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\264\0\17\365\17\343\17\321\17\277\17\255\17\233\17\211\17w\17e\17S\17H\0176"..., 4096, 12288) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17w\17e\17S\17A\17/"..., 4096, 16384) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 20480) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\302\0\17\356\17\334\17\312\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 24576) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\274\0\17\357\17\345\17\324\17\303\17\262\17\241\17\220\17\177\17m\17[\17I\17>"..., 4096, 28672) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17p\17e\17S\17A\17/"..., 4096, 32768) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\211\17w\17e\17S\17A\17/"..., 4096, 36864) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 40960) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\265\0\17\356\17\334\17\321\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 45056) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\267\0\17\356\17\334\17\312\17\271\17\250\17\227\17\206\17u\17d\17Z\17I\178"..., 4096, 49152) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\211\17w\17e\17S\17A\17/"..., 4096, 53248) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 57344) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\264\0\17\356\17\334\17\321\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 61440) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17p\17^\17S\17A\17/"..., 4096, 65536) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\267\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17w\17f\17U\17D\0173"..., 4096, 69632) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 73728) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\265\0\17\356\17\334\17\321\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 77824) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17p\17^\17S\17A\17/"..., 4096, 81920) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17w\17e\17S\17A\17/"..., 4096, 86016) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\263\0\17\356\17\334\17\312\17\270\17\246\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 90112) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\270\0\17\357\17\336\17\324\17\303\17\261\17\237\17\215\17{\17i\17W\17E\0173"..., 4096, 94208) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17p\17^\17S\17A\17/"..., 4096, 98304) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17w\17e\17S\17A\17/"..., 4096, 102400) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 106496) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 110592) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\277\0\17\357\17\345\17\324\17\303\17\262\17\241\17\220\17\177\17n\17]\17K\17@"..., 4096, 114688) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17p\17e\17S\17A\17/"..., 4096, 118784) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\224\17\211\17w\17e\17S\17A\17/"..., 4096, 122880) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 126976) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\264\0\17\356\17\334\17\321\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 131072) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\270\0\17\356\17\334\17\312\17\270\17\246\17\225\17\204\17s\17b\17X\17G\0176"..., 4096, 135168) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\224\17\211\17w\17e\17S\17A\17/"..., 4096, 139264) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 143360) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\264\0\17\356\17\334\17\321\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 147456) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17p\17^\17S\17A\17/"..., 4096, 151552) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\267\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17w\17e\17S\17B\0171"..., 4096, 155648) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\301\0\17\357\17\335\17\313\17\271\17\256\17\234\17\212\17x\17f\17T\17B\0170"..., 4096, 159744) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\264\0\17\356\17\334\17\321\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 163840) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17p\17^\17S\17A\17/"..., 4096, 167936) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17w\17e\17S\17A\17/"..., 4096, 172032) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\262\0\17\356\17\334\17\312\17\270\17\246\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 176128) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\273\0\17\357\17\336\17\324\17\303\17\262\17\241\17\217\17}\17k\17Y\17G\0175"..., 4096, 180224) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17p\17^\17S\17A\17/"..., 4096, 184320) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17w\17e\17S\17A\17/"..., 4096, 188416) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 192512) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 196608) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\277\0\17\356\17\343\17\322\17\301\17\260\17\237\17\216\17}\17l\17[\17J\17A"..., 4096, 200704) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17p\17e\17S\17A\17/"..., 4096, 204800) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\211\17w\17e\17S\17A\17/"..., 4096, 208896) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 212992) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\265\0\17\356\17\334\17\321\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 217088) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\267\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17q\17`\17V\17E\0174"..., 4096, 221184) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\211\17w\17e\17S\17A\17/"..., 4096, 225280) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 229376) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\265\0\17\356\17\334\17\321\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 233472) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17p\17^\17S\17A\17/"..., 4096, 237568) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\264\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17w\17e\17S\17A\17/"..., 4096, 241664) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\302\0\17\357\17\336\17\315\17\273\17\260\17\236\17\214\17z\17h\17V\17D\0172"..., 4096, 245760) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\265\0\17\356\17\334\17\321\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 249856) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17p\17^\17S\17A\17/"..., 4096, 253952) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17w\17e\17S\17A\17/"..., 4096, 258048) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 262144) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\266\0\17\357\17\336\17\315\17\303\17\262\17\241\17\220\17\177\17n\17\\\17J\178"..., 4096, 266240) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\265\0\17\365\17\343\17\321\17\277\17\255\17\233\17\211\17w\17e\17S\17H\0176"..., 4096, 270336) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17w\17e\17S\17A\17/"..., 4096, 274432) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\246\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 278528) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 282624) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\276\0\17\356\17\343\17\321\17\277\17\256\17\235\17\214\17{\17j\17Y\17H\17>"..., 4096, 286720) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17p\17e\17S\17A\17/"..., 4096, 290816) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\224\17\211\17w\17e\17S\17A\17/"..., 4096, 294912) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\277\0\17\356\17\334\17\312\17\270\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 299008) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\264\0\17\356\17\334\17\321\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 303104) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\267\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17p\17^\17T\17C\0172"..., 4096, 307200) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\246\17\224\17\212\17x\17f\17T\17B\0170"..., 4096, 311296) = 4096
+28402 pwrite64(3, "\r\0\0\0\324\1\300\0\17\356\17\334\17\312\17\270\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 315392) = 4096
+28402 pwrite64(3, "\r\0\0\0\325\1\264\0\17\356\17\334\17\321\17\277\17\255\17\233\17\211\17w\17e\17S\17A\17/"..., 4096, 319488) = 4096
+28402 pwrite64(3, "\r\0\0\0\313\1\246\0\17\356\17\334\17\312\17\270\17\246\17\224\17\202\17p\17^\17S\17A\17/"..., 4096, 323584) = 4096
+28402 pwrite64(3, "\r\0\0\0\312\1\243\0\17\355\17\332\17\307\17\264\17\241\17\216\17\202\17o\17\\\17I\0176\17#"..., 4096, 327680) = 4096
+28402 pwrite64(3, "\r\0\0\0\312\1\242\0\17\355\17\332\17\307\17\264\17\250\17\225\17\202\17o\17\\\17I\0176\17#"..., 4096, 331776) = 4096
+28402 pwrite64(3, "\r\0\0\0\312\1\244\0\17\355\17\332\17\316\17\273\17\250\17\225\17\202\17p\17^\17L\17:\17("..., 4096, 335872) = 4096
+28402 pwrite64(3, "\r\0\0\0\313\1\237\0\17\365\17\343\17\321\17\277\17\255\17\233\17\211\17w\17e\17R\17F\0173"..., 4096, 339968) = 4096
+28402 pwrite64(3, "\r\0\0\0\312\1\242\0\17\355\17\332\17\307\17\264\17\241\17\216\17{\17o\17\\\17I\0176\17#"..., 4096, 344064) = 4096
+28402 pwrite64(3, "\r\0\0\0\312\1\243\0\17\355\17\332\17\307\17\264\17\241\17\225\17\202\17o\17\\\17I\0176\17#"..., 4096, 348160) = 4096
+28402 pwrite64(3, "\r\0\0\0\312\1\242\0\17\355\17\332\17\307\17\273\17\250\17\225\17\202\17o\17\\\17I\0176\17#"..., 4096, 352256) = 4096
+28402 pwrite64(3, "\r\0\0\0\312\1\252\0\17\355\17\341\17\316\17\273\17\250\17\225\17\202\17o\17\\\17I\0176\17*"..., 4096, 356352) = 4096
+28402 pwrite64(3, "\r\0\0\0\312\1\242\0\17\355\17\332\17\307\17\264\17\241\17\216\17{\17h\17U\17I\0176\17#"..., 4096, 360448) = 4096
+28402 pwrite64(3, "\r\0\0\0\312\1\242\0\17\355\17\332\17\307\17\264\17\241\17\216\17{\17o\17\\\17I\0176\17#"..., 4096, 364544) = 4096
+28402 pwrite64(3, "\r\0\0\0\312\1\243\0\17\355\17\332\17\307\17\264\17\241\17\225\17\202\17o\17\\\17I\0176\17#"..., 4096, 368640) = 4096
+28402 pwrite64(3, "\r\0\0\0\312\1\242\0\17\355\17\332\17\307\17\273\17\250\17\225\17\202\17o\17\\\17I\0176\17#"..., 4096, 372736) = 4096
+28402 pwrite64(3, "\r\0\0\0\312\1\252\0\17\355\17\341\17\316\17\273\17\250\17\225\17\202\17o\17\\\17I\0176\17+"..., 4096, 376832) = 4096
+28402 pwrite64(3, "\r\0\0\0\312\1\242\0\17\355\17\332\17\307\17\264\17\241\17\216\17{\17h\17U\17I\0176\17#"..., 4096, 380928) = 4096
+28402 pwrite64(3, "\r\0\0\0\312\1\243\0\17\355\17\332\17\307\17\264\17\241\17\216\17{\17p\17^\17L\17:\17("..., 4096, 385024) = 4096
+28402 pwrite64(3, "\r\0\0\0\312\1\253\0\17\356\17\334\17\312\17\270\17\246\17\233\17\211\17w\17e\17R\17?\17,"..., 4096, 389120) = 4096
+28402 pwrite64(3, "\r\0\0\0\312\1\243\0\17\356\17\333\17\310\17\274\17\251\17\226\17\203\17p\17]\17J\0177\17$"..., 4096, 393216) = 4096
+28402 pwrite64(3, "\r\0\0\0\2\17\342\0\17\355\17\342\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 4096, 397312) = 4096
+28402 fdatasync(3)                      = 0
+28402 close(4)                          = 0
+28402 unlink("/tmp/sandbox_training_idkit4q9/test.db-journal") = 0
+28402 fcntl(3, F_SETLK, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=1073741826, l_len=510}) = 0
+28402 fcntl(3, F_SETLK, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=1073741824, l_len=2}) = 0
+28402 fcntl(3, F_SETLK, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+28402 read(0, "", 4096)                 = 0
+28402 newfstatat(AT_FDCWD, "/tmp/sandbox_training_idkit4q9/test.db", {st_mode=S_IFREG|0644, st_size=401408, ...}, 0) = 0
+28402 brk(0x6229358fa000)               = 0x6229358fa000
+28402 fstat(3, {st_mode=S_IFREG|0644, st_size=401408, ...}) = 0
+28402 newfstatat(AT_FDCWD, "/tmp/sandbox_training_idkit4q9/test.db", {st_mode=S_IFREG|0644, st_size=401408, ...}, 0) = 0
+28402 close(3)                          = 0
+28402 brk(0x6229358f9000)               = 0x6229358f9000
+28402 exit_group(0)                     = ?
+28402 +++ exited with 0 +++

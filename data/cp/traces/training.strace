@@ -1,106 +1,106 @@
-2954  execve("/usr/bin/cp", ["/usr/bin/cp", "srcdir/a.bin", "copy.bin"], 0x7ffe2a615f68 /* 30 vars */) = 0
-2954  brk(NULL)                         = 0x649da7be8000
-2954  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x72d443ca2000
-2954  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
-2954  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
-2954  fstat(3, {st_mode=S_IFREG|0644, st_size=20767, ...}) = 0
-2954  mmap(NULL, 20767, PROT_READ, MAP_PRIVATE, 3, 0) = 0x72d443c9c000
-2954  close(3)                          = 0
-2954  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
-2954  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
-2954  fstat(3, {st_mode=S_IFREG|0644, st_size=199120, ...}) = 0
-2954  mmap(NULL, 206288, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x72d443c69000
-2954  mmap(0x72d443c70000, 135168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x72d443c70000
-2954  mmap(0x72d443c91000, 28672, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x72d443c91000
-2954  mmap(0x72d443c98000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2f000) = 0x72d443c98000
-2954  mmap(0x72d443c9a000, 5584, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x72d443c9a000
-2954  close(3)                          = 0
-2954  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libacl.so.1", O_RDONLY|O_CLOEXEC) = 3
-2954  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
-2954  fstat(3, {st_mode=S_IFREG|0644, st_size=38984, ...}) = 0
-2954  mmap(NULL, 36896, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x72d443c5f000
-2954  mmap(0x72d443c61000, 20480, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x72d443c61000
-2954  mmap(0x72d443c66000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x72d443c66000
-2954  mmap(0x72d443c67000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x72d443c67000
-2954  close(3)                          = 0
-2954  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libattr.so.1", O_RDONLY|O_CLOEXEC) = 3
-2954  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
-2954  fstat(3, {st_mode=S_IFREG|0644, st_size=26776, ...}) = 0
-2954  mmap(NULL, 28696, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x72d443c57000
-2954  mmap(0x72d443c59000, 12288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x72d443c59000
-2954  mmap(0x72d443c5c000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x72d443c5c000
-2954  mmap(0x72d443c5d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x72d443c5d000
-2954  close(3)                          = 0
-2954  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
-2954  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \250\2\0\0\0\0\0"..., 832) = 832
-2954  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 840, 64) = 840
-2954  fstat(3, {st_mode=S_IFREG|0755, st_size=2190608, ...}) = 0
-2954  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 840, 64) = 840
-2954  mmap(NULL, 2231696, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x72d443a00000
-2954  mmap(0x72d443a28000, 1671168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x72d443a28000
-2954  mmap(0x72d443bc0000, 319488, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x72d443bc0000
-2954  mmap(0x72d443c0e000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20e000) = 0x72d443c0e000
-2954  mmap(0x72d443c14000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x72d443c14000
-2954  close(3)                          = 0
-2954  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
-2954  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
-2954  fstat(3, {st_mode=S_IFREG|0644, st_size=699056, ...}) = 0
-2954  mmap(NULL, 701112, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x72d443954000
-2954  mmap(0x72d443957000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x72d443957000
-2954  mmap(0x72d4439d3000, 176128, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7f000) = 0x72d4439d3000
-2954  mmap(0x72d4439fe000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa9000) = 0x72d4439fe000
-2954  close(3)                          = 0
-2954  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x72d443c55000
-2954  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x72d443c52000
-2954  arch_prctl(ARCH_SET_FS, 0x72d443c52840) = 0
-2954  set_tid_address(0x72d443c52e68)   = 2954
-2954  set_robust_list(0x72d443c52b20, 24) = 0
-2954  rseq(0x72d443c526a0, 0x20, 0, 0x53053053) = 0
-2954  mprotect(0x72d443c0e000, 16384, PROT_READ) = 0
-2954  mprotect(0x72d4439fe000, 4096, PROT_READ) = 0
-2954  mprotect(0x72d443c5d000, 4096, PROT_READ) = 0
-2954  mprotect(0x72d443c67000, 4096, PROT_READ) = 0
-2954  mprotect(0x72d443c98000, 4096, PROT_READ) = 0
-2954  mprotect(0x649d9d5a1000, 4096, PROT_READ) = 0
-2954  mprotect(0x72d443ce7000, 8192, PROT_READ) = 0
-2954  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
-2954  getrandom("\x2a\x39\x20\x3a\x61\xb0\x71\x84", 8, GRND_NONBLOCK) = 8
-2954  munmap(0x72d443c9c000, 20767)     = 0
-2954  statfs("/sys/fs/selinux", {f_type=SYSFS_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0xf77e1a29, 0x551c31de]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_NOATIME}) = 0
-2954  statfs("/selinux", 0x7ffef6d976e0) = -1 ENOENT (No such file or directory)
-2954  brk(NULL)                         = 0x649da7be8000
-2954  brk(0x649da7c09000)               = 0x649da7c09000
-2954  openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
-2954  fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
-2954  read(3, "nodev\tsysfs\nnodev\ttmpfs\nnodev\tpr"..., 1024) = 440
-2954  lseek(3, 0, SEEK_CUR)             = 440
-2954  lseek(3, 414, SEEK_SET)           = 414
-2954  close(3)                          = 0
-2954  openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
-2954  fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
-2954  read(3, "/dev/sdd / ext4 rw,relatime,disc"..., 1024) = 1024
-2954  read(3, "roc/sys/fs/binfmt_misc/status tm"..., 1024) = 1024
-2954  read(3, "u_lib/rw/work,uuid=on 0 0\nnone /"..., 1024) = 1024
-2954  read(3, "root=/mnt/,cache=0x5,access=clie"..., 1024) = 457
-2954  read(3, "", 1024)                 = 0
-2954  close(3)                          = 0
-2954  access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
-2954  geteuid()                         = 1000
-2954  openat(AT_FDCWD, "copy.bin", O_RDONLY|O_PATH|O_DIRECTORY) = -1 ENOENT (No such file or directory)
-2954  newfstatat(AT_FDCWD, "srcdir/a.bin", {st_mode=S_IFREG|0644, st_size=50000, ...}, 0) = 0
-2954  openat(AT_FDCWD, "srcdir/a.bin", O_RDONLY) = 3
-2954  fstat(3, {st_mode=S_IFREG|0644, st_size=50000, ...}) = 0
-2954  openat(AT_FDCWD, "copy.bin", O_WRONLY|O_CREAT|O_EXCL, 0644) = 4
-2954  ioctl(4, BTRFS_IOC_CLONE or FICLONE, 3) = -1 EOPNOTSUPP (Operation not supported)
-2954  fstat(4, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
-2954  fadvise64(3, 0, 0, POSIX_FADV_SEQUENTIAL) = 0
-2954  uname({sysname="Linux", nodename="DESKTOP-EVSL35S", ...}) = 0
-2954  copy_file_range(3, NULL, 4, NULL, 9223372035781033984, 0) = 50000
-2954  copy_file_range(3, NULL, 4, NULL, 9223372035781033984, 0) = 0
-2954  close(4)                          = 0
-2954  close(3)                          = 0
-2954  close(0)                          = 0
-2954  close(1)                          = 0
-2954  close(2)                          = 0
-2954  exit_group(0)                     = ?
-2954  +++ exited with 0 +++
+28441 execve("/usr/bin/cp", ["/usr/bin/cp", "srcdir/a.bin", "copy.bin"], 0x7fff5e04ba58 /* 30 vars */) = 0
+28441 brk(NULL)                         = 0x63e7672df000
+28441 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x760f8579e000
+28441 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+28441 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+28441 fstat(3, {st_mode=S_IFREG|0644, st_size=20767, ...}) = 0
+28441 mmap(NULL, 20767, PROT_READ, MAP_PRIVATE, 3, 0) = 0x760f85798000
+28441 close(3)                          = 0
+28441 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+28441 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+28441 fstat(3, {st_mode=S_IFREG|0644, st_size=199120, ...}) = 0
+28441 mmap(NULL, 206288, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x760f85765000
+28441 mmap(0x760f8576c000, 135168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x760f8576c000
+28441 mmap(0x760f8578d000, 28672, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x760f8578d000
+28441 mmap(0x760f85794000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2f000) = 0x760f85794000
+28441 mmap(0x760f85796000, 5584, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x760f85796000
+28441 close(3)                          = 0
+28441 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libacl.so.1", O_RDONLY|O_CLOEXEC) = 3
+28441 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+28441 fstat(3, {st_mode=S_IFREG|0644, st_size=38984, ...}) = 0
+28441 mmap(NULL, 36896, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x760f8575b000
+28441 mmap(0x760f8575d000, 20480, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x760f8575d000
+28441 mmap(0x760f85762000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x760f85762000
+28441 mmap(0x760f85763000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x760f85763000
+28441 close(3)                          = 0
+28441 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libattr.so.1", O_RDONLY|O_CLOEXEC) = 3
+28441 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+28441 fstat(3, {st_mode=S_IFREG|0644, st_size=26776, ...}) = 0
+28441 mmap(NULL, 28696, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x760f85753000
+28441 mmap(0x760f85755000, 12288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x760f85755000
+28441 mmap(0x760f85758000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x760f85758000
+28441 mmap(0x760f85759000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x760f85759000
+28441 close(3)                          = 0
+28441 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+28441 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \250\2\0\0\0\0\0"..., 832) = 832
+28441 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 840, 64) = 840
+28441 fstat(3, {st_mode=S_IFREG|0755, st_size=2190608, ...}) = 0
+28441 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 840, 64) = 840
+28441 mmap(NULL, 2231696, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x760f85400000
+28441 mmap(0x760f85428000, 1671168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x760f85428000
+28441 mmap(0x760f855c0000, 319488, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x760f855c0000
+28441 mmap(0x760f8560e000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20e000) = 0x760f8560e000
+28441 mmap(0x760f85614000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x760f85614000
+28441 close(3)                          = 0
+28441 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+28441 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+28441 fstat(3, {st_mode=S_IFREG|0644, st_size=699056, ...}) = 0
+28441 mmap(NULL, 701112, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x760f856a7000
+28441 mmap(0x760f856aa000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x760f856aa000
+28441 mmap(0x760f85726000, 176128, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7f000) = 0x760f85726000
+28441 mmap(0x760f85751000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa9000) = 0x760f85751000
+28441 close(3)                          = 0
+28441 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x760f856a5000
+28441 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x760f856a2000
+28441 arch_prctl(ARCH_SET_FS, 0x760f856a2840) = 0
+28441 set_tid_address(0x760f856a2e68)   = 28441
+28441 set_robust_list(0x760f856a2b20, 24) = 0
+28441 rseq(0x760f856a26a0, 0x20, 0, 0x53053053) = 0
+28441 mprotect(0x760f8560e000, 16384, PROT_READ) = 0
+28441 mprotect(0x760f85751000, 4096, PROT_READ) = 0
+28441 mprotect(0x760f85759000, 4096, PROT_READ) = 0
+28441 mprotect(0x760f85763000, 4096, PROT_READ) = 0
+28441 mprotect(0x760f85794000, 4096, PROT_READ) = 0
+28441 mprotect(0x63e758220000, 4096, PROT_READ) = 0
+28441 mprotect(0x760f857e3000, 8192, PROT_READ) = 0
+28441 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+28441 getrandom("\x7a\x45\x70\xe8\xf4\xdc\xbf\x42", 8, GRND_NONBLOCK) = 8
+28441 munmap(0x760f85798000, 20767)     = 0
+28441 statfs("/sys/fs/selinux", {f_type=SYSFS_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0x996bb2d4, 0xdbcdd20a]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_NOATIME}) = 0
+28441 statfs("/selinux", 0x7ffde373cc00) = -1 ENOENT (No such file or directory)
+28441 brk(NULL)                         = 0x63e7672df000
+28441 brk(0x63e767300000)               = 0x63e767300000
+28441 openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+28441 fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+28441 read(3, "nodev\tsysfs\nnodev\ttmpfs\nnodev\tpr"..., 1024) = 440
+28441 lseek(3, 0, SEEK_CUR)             = 440
+28441 lseek(3, 414, SEEK_SET)           = 414
+28441 close(3)                          = 0
+28441 openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
+28441 fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+28441 read(3, "none /usr/lib/modules/6.18.58.1-"..., 1024) = 1024
+28441 read(3, "0k,nr_inodes=1007060,mode=755 0 "..., 1024) = 1024
+28441 read(3, "msize=65536,trans=fd,rfd=6,wfd=6"..., 1024) = 1024
+28441 read(3, "24k,nr_inodes=1024,mode=700,nosw"..., 1024) = 453
+28441 read(3, "", 1024)                 = 0
+28441 close(3)                          = 0
+28441 access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+28441 geteuid()                         = 1000
+28441 openat(AT_FDCWD, "copy.bin", O_RDONLY|O_PATH|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+28441 newfstatat(AT_FDCWD, "srcdir/a.bin", {st_mode=S_IFREG|0644, st_size=50000, ...}, 0) = 0
+28441 openat(AT_FDCWD, "srcdir/a.bin", O_RDONLY) = 3
+28441 fstat(3, {st_mode=S_IFREG|0644, st_size=50000, ...}) = 0
+28441 openat(AT_FDCWD, "copy.bin", O_WRONLY|O_CREAT|O_EXCL, 0644) = 4
+28441 ioctl(4, BTRFS_IOC_CLONE or FICLONE, 3) = -1 EOPNOTSUPP (Operation not supported)
+28441 fstat(4, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+28441 fadvise64(3, 0, 0, POSIX_FADV_SEQUENTIAL) = 0
+28441 uname({sysname="Linux", nodename="DESKTOP-EVSL35S", ...}) = 0
+28441 copy_file_range(3, NULL, 4, NULL, 9223372035781033984, 0) = 50000
+28441 copy_file_range(3, NULL, 4, NULL, 9223372035781033984, 0) = 0
+28441 close(4)                          = 0
+28441 close(3)                          = 0
+28441 close(0)                          = 0
+28441 close(1)                          = 0
+28441 close(2)                          = 0
+28441 exit_group(0)                     = ?
+28441 +++ exited with 0 +++
